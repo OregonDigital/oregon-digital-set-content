@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* Braceros CSS */
+.collection-braceros {
+  #main-container {
+    margin-top: 0px;
+  }
+  .sidenav {
+    border-color: #F79247;
+    h4 {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      background-image: linear-gradient(bottom, #CC5500 0%, white 100%);
+      background-image: -o-linear-gradient(bottom, #CC5500 0%, #F7B377 100%);
+      background-image: -moz-linear-gradient(bottom, #CC5500 0%, #F7B377 100%);
+      background-image: -webkit-linear-gradient(bottom, #CC5500 0%, #F7B377 100%);
+      background-image: -ms-linear-gradient(bottom, #CC5500 0%, #F7B377 100%);
+
+      background-image: -webkit-gradient(
+          linear,
+          left bottom,
+          left top,
+          color-stop(0, #CC5500),
+          color-stop(1, white)
+      );
+    }
+  }
+  .navbar-inner {
+    background-color: black;
+    background-image: none;
+    border-bottom-width: 20px;
+    border-bottom-color: #CC5500;
+    .brand {
+      background-image: url(image_path("catalog/osulib_white.gif"));
+      width: 270px;
+      background-size: auto;
+      margin-top: -3px;
+      padding-bottom: 10px;
+      @media (max-width: 480px) {
+        width: 110px;
+        background-size: 110px;
+        margin-top: 5px;
+        padding-bottom: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+    }
+    #searchbar {
+      @media (max-width: 480px) {
+        width: 160px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+    a {
+      color: white;
+    }
+    .util-links-other {
+      color: white;
+    }
+  }
+}
