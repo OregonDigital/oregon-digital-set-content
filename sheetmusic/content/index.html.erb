@@ -2,7 +2,10 @@
 
 <div id="<%= params[:set] %>">
 
-  <span class="left-image span3"> <%= image_tag "sets/#{params[:set]}/freckle_face.jpg", :alt => @set.title %> </span>
+  <span class="left-image span3"> 
+    <%= link_to (image_tag "sets/#{params[:set]}/freckle_face.jpg", :alt => "Freckle Face" + ', ' + @set.title), '/catalog/oregondigital:0k225b07h' %> 
+	<br/><span class="caption"><%= link_to "Freckle Face", '/catalog/oregondigital:0k225b07h' %></span>
+  </span>
   <span class="description span5">
     <p>
       The University of Oregon Libraries present here a selection of images from the collections of
