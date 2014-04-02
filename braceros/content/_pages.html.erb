@@ -1,9 +1,9 @@
 <ul id="pages">
 <li><a href="<%= "/sets/#{params[:set]}?utf8=%E2%9C%93&collection=#{params[:set]}&id=#{params[:set]}&search_field=all_fields&q=" %>">Browse Items</a></li>
 
-<li><a href="<%= "/sets/#{params[:set]}/related" %>">Related Sources</a></li>
+<li><a href="<%= "/sets/#{params[:set]}/page/related" %>">Related Sources</a></li>
 
-<li><a href="<%= "/sets/#{params[:set]}/techinfo" %>">Technical Information</a></li>
+<li><a href="<%= "/sets/#{params[:set]}/page/techinfo" %>">Technical Information</a></li>
 
 <li><a href="<%= "/sets/#{params[:set]}" %>"><%= @set.title %> Home</a></li>
 </ul>
