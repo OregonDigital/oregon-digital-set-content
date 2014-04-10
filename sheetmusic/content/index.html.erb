@@ -1,12 +1,36 @@
-<div id="main-wrapper">
 
-<div id="<%= params[:set] %>">
 
-  <span class="left-image span3"> 
-    <%= link_to (image_tag "sets/#{params[:set]}/freckle_face.jpg", :alt => "Freckle Face" + ', ' + @set.title), '/catalog/oregondigital:0k225b07h' %> 
-	<br/><span class="caption"><%= link_to "Freckle Face", '/catalog/oregondigital:0k225b07h' %></span>
-  </span>
-  <span class="description span5">
+  <!-- Description -->
+   <div class="left-image span4">
+
+     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+       <!-- Wrapper for slides -->
+       <div class="carousel-inner">
+         <div class="item active">
+           <%= link_to (image_tag "sets/#{params[:set]}/freckle_face.jpg", :alt => "Freckle Face" + ', ' + @set.title), '/catalog/oregondigital:0k225b07h' %>
+           <div class="carousel-caption">
+             <%= link_to "Freckle Face", '/catalog/oregondigital:0k225b07h' %>
+           </div>
+         </div>
+         <div class="item">
+           <%= link_to (image_tag "sets/#{params[:set]}/freckle_face.jpg", :alt => "Freckle Face" + ', ' + @set.title), '/catalog/oregondigital:0k225b07h' %>
+           <div class="carousel-caption">
+             <%= link_to "Freckle Face", '/catalog/oregondigital:0k225b07h' %>
+           </div>
+         </div>
+         <!-- Indicators -->
+       </div>
+       <!-- Controls -->
+       <ol class="carousel-indicators">
+         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+       </ol>
+       <a class="carousel-control left" href="#carousel-example-generic" data-slide="prev">&lsaquo;</a>
+       <a class="carousel-control right" href="#carousel-example-generic" data-slide="next">&rsaquo;</span>
+       </a>
+     </div>
+
+  </div>
     <p>
       The University of Oregon Libraries present here a selection of images from the collections of
       printed sheet music held by the <a href="http://libweb.uoregon.edu/music/">Music Services Department</a> and in the
@@ -20,9 +44,13 @@
       music by women composers. These collections mirror the larger collections of the Music Services Department and
       provide a glimpse into the riches and possibilities of research available in the Historic Sheet Music Collection.
     </p>
-  </span>
 
-</div>
+  <!-- Acknowledgements/Credits/Logos -->
+  <h5>Acknowledgements</h5>
+  <p>Assure polite his really and others figure though. Day age advantages end sufficient eat expression travelling.
+    Of on am father by agreed supply rather either. Own handsome delicate its property mistress her end appetite. Mean are sons too sold nor said.
+    Son share three men power boy you. Now merits wonder effect garret own.</p>
+  <p>Ten the hastened steepest feelings pleasant few surprise property. An brother he do colonel against minutes uncivil. Can how elinor warmly mrs basket marked. Led raising expense yet demesne weather musical. Me mr what park next busy ever. Elinor her his secure far twenty eat object. Late any far saw size want man. Which way you wrong add shall one. As guest right of he scale these. Horses nearer oh elinor of denote.
+  </p>
 
-</div> <!-- /main-wrapper -->
-</div><!-- /page -->
+
