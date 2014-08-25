@@ -1,112 +1,80 @@
-
-
   <!-- Description -->
-   <div class="left-image span4">
-
-     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-       <!-- Wrapper for slides -->
-       <div class="carousel-inner">
-         <div class="item active">
-           <%= link_to (image_tag "sets/#{params[:set]}/freckle_face.jpg", :alt => "Freckle Face" + ', ' + @set.title), '/catalog/oregondigital:0k225b07h' %>
-           <div class="carousel-caption">
-             <%= link_to "Freckle Face", '/catalog/oregondigital:0k225b07h' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/lucky_duck.jpg", :alt => "A Lucky Duck" + ', ' + @set.title), '/catalog/oregondigital:76537134t' %>
-           <div class="carousel-caption">
-             <%= link_to "A Lucky Duck", '/catalog/oregondigital:76537134t' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/up_on_the_beaver.jpg", :alt => 'Up on the "Beaver" back on the "Bear"' + ', ' + @set.title), '/catalog/oregondigital:r494vk17h' %>
-           <div class="carousel-caption">
-             <%= link_to 'Up on the "Beaver" back on the "Bear"', '/catalog/oregondigital:r494vk17h' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/oh_you_round_up.jpg", :alt => "Oh you round up let 'er buck: a cowboy song" + ', ' + @set.title), '/catalog/oregondigital:z890rt26b' %>
-           <div class="carousel-caption">
-             <%= link_to "Oh you round up let 'er buck: a cowboy song", '/catalog/oregondigital:z890rt26b' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/oregon_my_oregon.jpg", :alt => "Oregon, my Oregon: official Oregon State song" + ', ' + @set.title), '/catalog/oregondigital:1g05fb61q' %>
-           <div class="carousel-caption">
-             <%= link_to "Oregon, my Oregon: official Oregon State song", '/catalog/oregondigital:1g05fb61q' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/shes_sleeping_neath_oregons_tall_pines.jpg", :alt => "She's sleeping neath Oregon's tall pines" + ', ' + @set.title), '/catalog/oregondigital:r781wg05z' %>
-           <div class="carousel-caption">
-             <%= link_to "She's sleeping neath Oregon's tall pines", '/catalog/oregondigital:r781wg05z' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/fond_dove_and_his_lady_love.jpg", :alt => "The fond dove and his lady love" + ', ' + @set.title), '/catalog/oregondigital:h415p9589' %>
-           <div class="carousel-caption">
-             <%= link_to "The fond dove and his lady love", '/catalog/oregondigital:h415p9589' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/anti_rag-time_gal.jpg", :alt => "Anti rag-time gal" + ', ' + @set.title), '/catalog/oregondigital:w66343646' %>
-           <div class="carousel-caption">
-             <%= link_to "Anti rag-time gal", '/catalog/oregondigital:w66343646' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/snowflakes.jpg", :alt => "Snowflakes" + ', ' + @set.title), '/catalog/oregondigital:rb68xb856' %>
-           <div class="carousel-caption">
-             <%= link_to "Snowflakes", '/catalog/oregondigital:rb68xb856' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/lets_get_the_umpires_goat.jpg", :alt => "Let's get the umpire's goat" + ', ' + @set.title), '/catalog/oregondigital:b8515n388' %>
-           <div class="carousel-caption">
-             <%= link_to "Let's get the umpire's goat", '/catalog/oregondigital:b8515n388' %>
-           </div>
-         </div>
-
-         <!-- Indicators -->
-       </div>
-       <!-- Controls -->
-       <ol class="carousel-indicators">
-         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="8"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="9"></li>
-       </ol>
-       <a class="carousel-control left" href="#carousel-example-generic" data-slide="prev">&lsaquo;</a>
-       <a class="carousel-control right" href="#carousel-example-generic" data-slide="next">&rsaquo;</span>
-       </a>
-     </div>
-
-  </div>
-    <p>
-      The University of Oregon Libraries present here a selection of images from the collections of
-      printed sheet music held by the <a href="http://libweb.uoregon.edu/music/">Music Services Department</a> and in the
-      Oregon Collection of <a href="http://libweb.uoregon.edu/speccoll/">Special Collections &amp; University Archives</a>
-      at the University of Oregon Libraries. <a href="?search_field=all_fields">Browse the entire collection.</a>
-    </p>
-    <p>
-      The preliminary digitized music collections currently available are the
-	  <a href="<%= "/sets/#{params[:set]}/about#oregon" %>">Oregon Music Collection</a>, focusing on music by Oregonians or about Oregon events and
-	  places, and the <a href="<%= "/sets/#{params[:set]}/about#women" %>">Women Composers Collection</a>, showing the strength of the collection in
-      music by women composers. These collections mirror the larger collections of the Music Services Department and
-      provide a glimpse into the riches and possibilities of research available in the Historic Sheet Music Collection.
-    </p>
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/freckle_face.jpg", :alt => "Freckle Face" + ', ' + @set.title), '/catalog/oregondigital:0k225b07h' %>
+              <figcaption><%= link_to "Freckle Face", '/catalog/oregondigital:0k225b07h' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/lucky_duck.jpg", :alt => "A Lucky Duck" + ', ' + @set.title), '/catalog/oregondigital:76537134t' %>
+              <figcaption><%= link_to "A Lucky Duck", '/catalog/oregondigital:76537134t' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/up_on_the_beaver.jpg", :alt => "Up on the 'Beaver' back on the 'Bear'" + ', ' + @set.title), '/catalog/oregondigital:r494vk17h' %>
+              <figcaption><%= link_to "Up on the 'Beaver' Back on the 'Bear'", '/catalog/oregondigital:r494vk17h' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oh_you_round_up.jpg", :alt => "Oh you round up let 'er buck: a cowboy song" + ', ' + @set.title), '/catalog/oregondigital:z890rt26b' %>
+              <figcaption><%= link_to "Oh You Round Up Let 'Er Buck: A Cowboy Song", '/catalog/oregondigital:z890rt26b' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregon_my_oregon.jpg", :alt => "Oregon, my Oregon: official Oregon State song" + ', ' + @set.title), '/catalog/oregondigital:1g05fb61q' %>
+              <figcaption><%= link_to "Oregon, My Oregon: Official Oregon State Song", '/catalog/oregondigital:1g05fb61q' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/shes_sleeping_neath_oregons_tall_pines.jpg", :alt => "She's sleeping neath Oregon's tall pines" + ', ' + @set.title), '/catalog/oregondigital:r781wg05z' %>
+              <figcaption><%= link_to "She's Sleeping Neath Oregon's Tall Pines", '/catalog/oregondigital:r781wg05z' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/fond_dove_and_his_lady_love.jpg", :alt => "The fond dove and his lady love" + ', ' + @set.title), '/catalog/oregondigital:h415p9589' %>
+              <figcaption><%= link_to "The Fond Dove and His Lady Love", '/catalog/oregondigital:h415p9589' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/snowflakes.jpg", :alt => "Snowflakes" + ', ' + @set.title), '/catalog/oregondigital:rb68xb856' %>
+              <figcaption><%= link_to "Snowflakes", '/catalog/oregondigital:rb68xb856' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/lets_get_the_umpires_goat.jpg", :alt => "Let's get the umpire's goat" + ', ' + @set.title), '/catalog/oregondigital:b8515n388' %>
+              <figcaption><%= link_to "Let's Get The Umpire's Goat", '/catalog/oregondigital:b8515n388' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+  
+  <p>The University of Oregon Libraries present here a selection of images from the collections of printed sheet music held by the <a href="http://libweb.uoregon.edu/music/">Music Services Department</a> and in the Oregon Collection of <a href="http://libweb.uoregon.edu/speccoll/">Special Collections &amp; University Archives</a> at the University of Oregon Libraries. <a href="?search_field=all_fields">Browse the entire collection.</a></p>
+    
+  <p>The preliminary digitized music collections currently available are the <a href="<%= "/sets/#{params[:set]}/about#oregon" %>">Oregon Music Collection</a>, focusing on music by Oregonians or about Oregon events and places, and the <a href="<%= "/sets/#{params[:set]}/about#women" %>">Women Composers Collection</a>, showing the strength of the collection in music by women composers. These collections mirror the larger collections of the Music Services Department and provide a glimpse into the riches and possibilities of research available in the Historic Sheet Music Collection.</p>
