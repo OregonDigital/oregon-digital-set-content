@@ -1,28 +1,25 @@
 
+    <!-- Description -->
+    <div class="left-image span4">
 
-  <!-- Description -->
-   <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/jsma_MWCH45-8.jpg", :alt => "100 Boys' Woman's Nonofficial Semiformal Coat; Chinese Woman's Nonofficial Semiformal Coat" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "100 Boys' Woman's Nonofficial Semiformal Coat; Chinese Woman's Nonofficial Semiformal Coat", '#' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+        
+    </div>
 
-     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-       <!-- Wrapper for slides -->
-       <div class="carousel-inner">
-         <div class="item active">
-           <%= link_to (image_tag "sets/#{params[:set]}/jsma_MWCH45-8.jpg", :alt => "100 Boys' Woman's Nonofficial Semiformal Coat; Chinese Woman's Nonofficial Semiformal Coat" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "100 Boys' Woman's Nonofficial Semiformal Coat; Chinese Woman's Nonofficial Semiformal Coat", '#' %>
-           </div>
-         </div>
-         <!-- Indicators -->
-       </div>
-       <!-- Controls -->
-       <ol class="carousel-indicators">
-         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-       </ol>
-       <a class="carousel-control left" href="#carousel-example-generic" data-slide="prev">&lsaquo;</a>
-       <a class="carousel-control right" href="#carousel-example-generic" data-slide="next">&rsaquo;</span>
-       </a>
-     </div>
-
-  </div>
-    <p>
-    Collaboration between the Jordan Schnitzer Museum of Art and the UO Libraries to display selection the Museum's permanent collection. Restricted to UO and OSU. The Museum's public collection is online at: <a href="http://jsmacollection.uoregon.edu">http://jsmacollection.uoregon.edu</a>. </p>
+    <p>Collaboration between the Jordan Schnitzer Museum of Art and the UO Libraries to display selection the Museum's permanent collection. Restricted to UO and OSU. The Museum's public collection is online at: <a href="http://jsmacollection.uoregon.edu">http://jsmacollection.uoregon.edu</a>.</p>
