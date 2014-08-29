@@ -1,101 +1,81 @@
 
+    <!-- Description -->
+    <div class="left-image span4">
 
-  <!-- Description -->
-   <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/mascot_ducks.jpg", :alt => "Mascot Ducks" + ', ' + @set.title), '#' %>
+            <figcaption><%= link_to "Mascot Ducks", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/robert_d_clark.jpg", :alt => "Robert D. Clark" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Robert D. Clark" '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregon_shirts.jpg", :alt => "Student group" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Student group", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/chapman_hall_entrance.jpg", :alt => "Chapman Hall entrance" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Chapman Hall entrance", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/honors_college_fireplace_studying.jpg", :alt => "Honors College fireplace study group" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Honors College fireplace study group", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/womens_dorm.jpg", :alt => "Women's Dorm" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Women's Dorm", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/cancel_the_naval_maneuvers.jpg", :alt => "Cancel the Naval Maneuvers" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Cancel the Naval Maneuvers", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/memorial_quad.jpg", :alt => "Memorial Quad - 3" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Memorial Quad - 3", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/students_demand_equal_voice.jpg", :alt => "Students demand equal voice" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Students demand equal voice", '#' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
 
-     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-       <!-- Wrapper for slides -->
-       <div class="carousel-inner">
-         <div class="item active">
-           <%= link_to (image_tag "sets/#{params[:set]}/mascot_ducks.jpg", :alt => "Mascot Ducks" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Mascot Ducks", '#' %>
-           </div>
-         </div>
+    </div>
 
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/perfectly_good_tree.jpg", :alt => "Perfectly good tree" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Perfectly good tree", '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/robert_d_clark.jpg", :alt => "Robert D. Clark" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Robert D. Clark" '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/oregon_shirts.jpg", :alt => "Student group" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Student group", '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/chapman_hall_entrance.jpg", :alt => "Chapman Hall entrance" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Chapman Hall entrance", '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/honors_college_fireplace_studying.jpg", :alt => "Honors College fireplace study group" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Honors College fireplace study group", '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/womens_dorm.jpg", :alt => "Women's Dorm" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Women's Dorm", '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/cancel_the_naval_maneuvers.jpg", :alt => "Cancel the Naval Maneuvers" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Cancel the Naval Maneuvers", '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/memorial_quad.jpg", :alt => "Memorial Quad - 3" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Memorial Quad - 3", '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/students_demand_equal_voice.jpg", :alt => "Students demand equal voice" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Students demand equal voice", '#' %>
-           </div>
-         </div>
-         <!-- Indicators -->
-       </div>
-       <!-- Controls -->
-       <ol class="carousel-indicators">
-         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="8"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="9"></li>
-       </ol>
-       <a class="carousel-control left" href="#carousel-example-generic" data-slide="prev">&lsaquo;</a>
-       <a class="carousel-control right" href="#carousel-example-generic" data-slide="next">&rsaquo;</span>
-       </a>
-     </div>
-
-  </div>
-    <p>
-    The University Archives Photograph Collection contains modern and vintage photographic prints related to the University of Oregon. The photographs depict a variety of buildings, historic scenes, events, students, faculty and staff, and scenes of campus life.
-    </p>
+    <p>The University Archives Photograph Collection contains modern and vintage photographic prints related to the University of Oregon. The photographs depict a variety of buildings, historic scenes, events, students, faculty and staff, and scenes of campus life.</p>

@@ -1,106 +1,87 @@
 
+    <!-- Description -->
+    <div class="left-image span4">
 
-  <!-- Description -->
-   <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/A_ATHMBase_n.d._0003.jpg", :alt => "Men's baseball" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Men's baseball", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/UP_BBWomens_20110108_07.jpg", :alt => "Kristi Fallin, 2011" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Kristi Fallin, 2011", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/A_ATHTF_Mens1920s_0002.jpg", :alt => "Richard S. Smith and Charles E. Wagner, 1897-1901" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Richard S. Smith and Charles E. Wagner, 1897-1901" '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/A_ATHFBLPlayers1950s_0036.jpg", :alt => "Ron Stover, #83, and J.C. Wheeler, #80" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Ron Stover, #83, and J.C. Wheeler, #80", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/UA_ATHBSKTF0012.jpg", :alt => "Men's Basketball - National Champs" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Men's Basketball - National Champs", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/A_ATHFIE0002.jpg", :alt => "Women's field hockey" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Women's field hockey", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/UP_Track_20110409_08.jpg", :alt => "David Klech, 2011" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "David Klech, 2011", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/A_ATHGYMW0003.jpg", :alt => "Women's gym, 1913" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Women's gym, 1913", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/A_ATHBBW_1980s_1990s_0021.jpg", :alt => "Alison Lang" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Alison Lang", '#' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
 
-     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-       <!-- Wrapper for slides -->
-       <div class="carousel-inner">
-         <div class="item active">
-           <%= link_to (image_tag "sets/#{params[:set]}/A_ATHMBase_n.d._0003.jpg", :alt => "Men's baseball" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Men's baseball", '#' %>
-           </div>
-         </div>
+    </div>
 
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/UP_BBWomens_20110108_07.jpg", :alt => "Kristi Fallin, 2011" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Kristi Fallin, 2011", '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/A_ATHTF_Mens1920s_0002.jpg", :alt => "Richard S. Smith and Charles E. Wagner, 1897-1901" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Richard S. Smith and Charles E. Wagner, 1897-1901" '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/A_ATHFBLPlayers1950s_0036.jpg", :alt => "Ron Stover, #83, and J.C. Wheeler, #80" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Ron Stover, #83, and J.C. Wheeler, #80", '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/UA_ATHBSKTF0012.jpg", :alt => "Men's Basketball - National Champs" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Men's Basketball - National Champs", '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/A_ATHFIE0002.jpg", :alt => "Women's field hockey" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Women's field hockey", '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/UP_Track_20110409_08.jpg", :alt => "David Klech, 2011" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "David Klech, 2011", '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/A_ATHGYMW0003.jpg", :alt => "Women's gym, 1913" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Women's gym, 1913", '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/A_ATHWBase_0003.jpg", :alt => "Women baseball players" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Women baseball players", '#' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/A_ATHBBW_1980s_1990s_0021.jpg", :alt => "Alison Lang" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Alison Lang", '#' %>
-           </div>
-         </div>
-         <!-- Indicators -->
-       </div>
-       <!-- Controls -->
-       <ol class="carousel-indicators">
-         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="8"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="9"></li>
-       </ol>
-       <a class="carousel-control left" href="#carousel-example-generic" data-slide="prev">&lsaquo;</a>
-       <a class="carousel-control right" href="#carousel-example-generic" data-slide="next">&rsaquo;</span>
-       </a>
-     </div>
-
-  </div>
-    <p>
-      University Archives – documents, photographs, physical objects, and audiovisual materials – tell the story of athletics at the University of Oregon. More than just statistics of accomplishments, this is the story of people and events that changed athletics at the University of Oregon over the past 110 years. It is also the story of athletics in higher education: the relationship and the issues involved between athletics and the academy over time.
-      </p>
-      <p> View <a href="http://sportshistory.uoregon.edu">Leadership and Legacy</a> exhibit. </p>
+    <p>University Archives – documents, photographs, physical objects, and audiovisual materials – tell the story of athletics at the University of Oregon. More than just statistics of accomplishments, this is the story of people and events that changed athletics at the University of Oregon over the past 110 years. It is also the story of athletics in higher education: the relationship and the issues involved between athletics and the academy over time.</p>
+    
+    <p>View <a href="http://sportshistory.uoregon.edu">Leadership and Legacy</a> exhibit. </p>
+      
     <h3>Acknowledgements</h3>
-    <p>
-      Through a generous gift from Dave and Terry Taylor, the University of Oregon Libraries present here a small sampling of the materials that make up the University's archives related to its athletics programs. Many areas and people will benefit from the project, and it will provide a fresh look at the development, interaction, and influence of sports at the University of Oregon and in the academic setting.
-    </p>
+    
+    <p>Through a generous gift from Dave and Terry Taylor, the University of Oregon Libraries present here a small sampling of the materials that make up the University's archives related to its athletics programs. Many areas and people will benefit from the project, and it will provide a fresh look at the development, interaction, and influence of sports at the University of Oregon and in the academic setting.</p>
