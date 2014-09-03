@@ -8,6 +8,12 @@
         <ul class="slides crop">
           <li>
             <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/Knight_east_foier.jpg", :alt => "Knight Library East Foyer." + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Knight Library East Foyer", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/_MG_8560.jpg", :alt => "Pioneer Mother Statue." + ', ' + @set.title), '#' %>
               <figcaption><%= link_to "Pioneer Mother Statue", '#' %></figcaption>
             </figure>
@@ -21,13 +27,7 @@
           <li>
             <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/_MG_2165.jpg", :alt => "Knight Library." + ', ' + @set.title), '#' %>
-              <figcaption><%= link_to "Knight Library" '#' %></figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/Knight_east_foier.jpg", :alt => "Knight Library East Foyer." + ', ' + @set.title), '#' %>
-              <figcaption><%= link_to "Knight Library East Foyer", '#' %></figcaption>
+              <figcaption><%= link_to "Knight Library", '#' %></figcaption>
             </figure>
           </li>
           <li>
@@ -45,9 +45,6 @@
         </ul>
       <!-- Optional -->
         <ul class="pager">
-          <li><a href="#"><span></span></a></li>
-          <li><a href="#"><span></span></a></li>
-          <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>

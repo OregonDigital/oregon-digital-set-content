@@ -8,6 +8,12 @@
         <ul class="slides crop">
           <li>
             <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/sitinApril1970.jpg", :alt => "Attorney General letter to Clark re: Johnson Hall Sit-In" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Attorney General letter to Clark re: Johnson Hall Sit-In", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/blackpanthers.jpg", :alt => "Advice of Irregularity Reported by Physical Plant Patrolman" + ', ' + @set.title), '#' %>
               <figcaption><%= link_to "Advice of Irregularity Reported by Physical Plant Patrolman", '#' %></figcaption>
             </figure>
@@ -21,19 +27,13 @@
           <li>
             <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/weyerhaeuser.jpg", :alt => "News release: Student Conduct re: Weyerhaeuser incident" + ', ' + @set.title), '#' %>
-              <figcaption><%= link_to "News release: Student Conduct re: Weyerhaeuser incident" '#' %></figcaption>
+              <figcaption><%= link_to "News release: Student Conduct re: Weyerhaeuser incident", '#' %></figcaption>
             </figure>
           </li>
           <li>
             <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/caricature_clark.jpg", :alt => "Caricature drawing of Robert D. Clark" + ', ' + @set.title), '#' %>
               <figcaption><%= link_to "Caricature drawing of Robert D. Clark", '#' %></figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/sitinApril1970.jpg", :alt => "Attorney General letter to Clark re: Johnson Hall Sit-In" + ', ' + @set.title), '#' %>
-              <figcaption><%= link_to "Attorney General letter to Clark re: Johnson Hall Sit-In", '#' %></figcaption>
             </figure>
           </li>
           <li>
@@ -45,9 +45,6 @@
         </ul>
       <!-- Optional -->
         <ul class="pager">
-          <li><a href="#"><span></span></a></li>
-          <li><a href="#"><span></span></a></li>
-          <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
