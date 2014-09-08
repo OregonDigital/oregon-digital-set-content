@@ -1,0 +1,33 @@
+  <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/petrarch1904.jpg", :alt => "Modigliani Edition" + ', ' + @set.title), '/catalog/oregondigital:qf85nb56b' %>
+              <figcaption><%= link_to "Modigliani Edition", '/catalog/oregondigital:qf85nb56b' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/velutello1584.jpg", :alt => "Veulutello Commentary" + ', ' + @set.title), '/catalog/oregondigital:fq977v05' %>
+              <figcaption><%= link_to "Veulutello Commentary", '/catalog/oregondigital:fq977v05' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+  
+<p>The items in the Petrarch digital collection support the <a href="http://petrarch.uoregon.edu">Oregon Petrarch Open Book</a> (OPOB). OPOB is a digital scholarship project directed by Professor Massimo Lollini as an ongoing web-based system devoted to the study and teaching of Petrarch's <em>Canzoniere</em>..</p>
+
+<h3>Acknowledgements</h3>
+
+<p>Support for this project has been provided by the <a href="http://www.neh.gov/">National Endowment for the Humanities</a> and the <a href="http://www.acls.org/">American Council of Learned Societies.</a></p>
