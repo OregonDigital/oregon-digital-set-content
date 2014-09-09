@@ -6,6 +6,11 @@
     <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
     <ul class="slides crop">
       <li>
+        <figure> <%= link_to (image_tag "sets/#{params[:set]}/seasons_winter.jpg", :alt => "Seasons (Winter), Anne Storrs & David Bales, Sculpture, University of Oregon, 1995" + ', ' + @set.title), '#' %>
+          <figcaption> <%= link_to "Seasons (Winter), Anne Storrs & David Bales, Sculpture, University of Oregon, 1995", '#' %> </figcaption>
+        </figure>
+      </li>
+      <li>
         <figure> <%= link_to (image_tag "sets/#{params[:set]}/almost_freezing.jpg", :alt => "Almost Freezing, Thomas Sayre, Sculpture, Eastern Oregon University, 2003" + ', ' + @set.title), '#' %>
           <figcaption> <%= link_to "Almost Freezing, Thomas Sayre, Sculpture, Eastern Oregon University, 2003", '#' %> </figcaption>
         </figure>
@@ -18,11 +23,6 @@
       <li>
         <figure> <%= link_to (image_tag "sets/#{params[:set]}/river_frontage.jpg", :alt => "River Frontage, Jack Portland, Painting, Department of Transportation, 1985" + ', ' + @set.title), '#' %>
           <figcaption> <%= link_to "River Frontage, Jack Portland, Painting, Department of Transportation, 1985", '#' %> </figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure> <%= link_to (image_tag "sets/#{params[:set]}/seasons_winter.jpg", :alt => "Seasons (Winter), Anne Storrs & David Bales, Sculpture, University of Oregon, 1995" + ', ' + @set.title), '#' %>
-          <figcaption> <%= link_to "Seasons (Winter), Anne Storrs & David Bales, Sculpture, University of Oregon, 1995", '#' %> </figcaption>
         </figure>
       </li>
       <li>

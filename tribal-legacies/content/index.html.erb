@@ -8,6 +8,12 @@
         <ul class="slides crop">
           <li>
             <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/homer_barnett_papers.jpg", :alt => "Homer Barnett Papers" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Homer Barnett Papers" '#' %></figcaption>
+            </figure>
+          </li>          
+          <li>
+            <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/alaska_mining_and_prospecting_company_records.jpg", :alt => "Alaska Mining and Prospecting Company Records" + ', ' + @set.title), '#' %>
               <figcaption><%= link_to "Alaska Mining and Prospecting Company Records", '#' %></figcaption>
             </figure>
@@ -16,12 +22,6 @@
             <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/northwest_photography.jpg", :alt => "Northwest Photography" + ', ' + @set.title), '#' %>
               <figcaption><%= link_to "Northwest Photography", '#' %></figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/homer_barnett_papers.jpg", :alt => "Homer Barnett Papers" + ', ' + @set.title), '#' %>
-              <figcaption><%= link_to "Homer Barnett Papers" '#' %></figcaption>
             </figure>
           </li>
           <li>
