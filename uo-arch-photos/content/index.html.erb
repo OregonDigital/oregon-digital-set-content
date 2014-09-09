@@ -1,10 +1,10 @@
 
     <!-- Description -->
     <div class="left-image span4">
-
       <div class="blueberry">
       <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
       <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
         <ul class="slides crop">
           <li>
             <figure>
@@ -15,7 +15,7 @@
           <li>
             <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/mascot_ducks.jpg", :alt => "Mascot Ducks" + ', ' + @set.title), '#' %>
-            <figcaption><%= link_to "Mascot Ducks", '#' %></figcaption>
+              <figcaption><%= link_to "Mascot Ducks", '#' %></figcaption>
             </figure>
           </li>
           <li>

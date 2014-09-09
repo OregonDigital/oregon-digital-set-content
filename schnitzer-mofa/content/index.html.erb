@@ -1,10 +1,10 @@
 
     <!-- Description -->
     <div class="left-image span4">
-
       <div class="blueberry">
       <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
       <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
         <ul class="slides crop">
           <li>
             <figure>
@@ -12,9 +12,16 @@
               <figcaption><%= link_to "100 Boys' Woman's Nonofficial Semiformal Coat; Chinese Woman's Nonofficial Semiformal Coat", '#' %></figcaption>
             </figure>
           </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/schnitzer-mofa2.jpg", :alt => "Abstraction painting by Edgar Louis Yaeger" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Abstraction by Edgar Louis Yaeger", '#' %></figcaption>
+            </figure>
+          </li>
         </ul>
       <!-- Optional -->
         <ul class="pager">
+          <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
         </ul>
       <!-- /Optional -->

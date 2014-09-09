@@ -1,79 +1,89 @@
-<!-- Description -->
 
-<div class="left-image span4">
-  <div class="blueberry">
-    <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
-    <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
-    <ul class="slides crop">
-      <li>
-        <figure> <%= link_to (image_tag "sets/#{params[:set]}/seasons_winter.jpg", :alt => "Seasons (Winter), Anne Storrs & David Bales, Sculpture, University of Oregon, 1995" + ', ' + @set.title), '#' %>
-          <figcaption> <%= link_to "Seasons (Winter), Anne Storrs & David Bales, Sculpture, University of Oregon, 1995", '#' %> </figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure> <%= link_to (image_tag "sets/#{params[:set]}/almost_freezing.jpg", :alt => "Almost Freezing, Thomas Sayre, Sculpture, Eastern Oregon University, 2003" + ', ' + @set.title), '#' %>
-          <figcaption> <%= link_to "Almost Freezing, Thomas Sayre, Sculpture, Eastern Oregon University, 2003", '#' %> </figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure> <%= link_to (image_tag "sets/#{params[:set]}/raven_brings_the_salmon.jpg", :alt => "Raven Brings the Salmon, Audrey May Hatfield, Painting, Oregon State University, 1998" + ', ' + @set.title), '#' %>
-          <figcaption> <%= link_to "Raven Brings the Salmon, Audrey May Hatfield, Painting, Oregon State University, 1998", '#' %> </figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure> <%= link_to (image_tag "sets/#{params[:set]}/river_frontage.jpg", :alt => "River Frontage, Jack Portland, Painting, Department of Transportation, 1985" + ', ' + @set.title), '#' %>
-          <figcaption> <%= link_to "River Frontage, Jack Portland, Painting, Department of Transportation, 1985", '#' %> </figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure> <%= link_to (image_tag "sets/#{params[:set]}/vega.jpg", :alt => "Vega, William (Bill) Moore, Sculpture, Public Service Building, 1990" + ', ' + @set.title), '#' %>
-          <figcaption> <%= link_to "Vega, William (Bill) Moore, Sculpture, Public Service Building, 1990", '#' %> </figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure> <%= link_to (image_tag "sets/#{params[:set]}/parrot_tulips_ii.jpg", :alt => "Parrot Tulips II, Sherrie Wolf, Painting, Oregon State University, 1995" + ', ' + @set.title), '#' %>
-          <figcaption> <%= link_to "Parrot Tulips II, Sherrie Wolf, Painting, Oregon State University, 1995", '#' %> </figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure> <%= link_to (image_tag "sets/#{params[:set]}/a_classic_jump_off.jpg", :alt => "A Classic Jump-Off, James Kirk, Painting, Executive Building, 1982" + ', ' + @set.title), '#' %>
-          <figcaption> <%= link_to "A Classic Jump-Off, James Kirk, Painting, Executive Building, 1982", '#' %> </figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure> <%= link_to (image_tag "sets/#{params[:set]}/untitled_douglas.jpg", :alt => "Untitled, Douglas Frank, Photograph, Veteran's Affairs Building, 1984" + ', ' + @set.title), '#' %>
-          <figcaption> <%= link_to "Untitled, Douglas Frank, Photograph, Veteran's Affairs Building, 1984", '#' %> </figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure> <%= link_to (image_tag "sets/#{params[:set]}/aquarium_vase.jpg", :alt => "Aquarium Vase, James E. Nowak, Glass art, Department of Transportation, 1995" + ', ' + @set.title), '#' %>
-          <figcaption> <%= link_to "Aquarium Vase, James E. Nowak, Glass art, Department of Transportation, 1995", '#' %> </figcaption>
-        </figure>
-      </li>
-    </ul>
-    <!-- Optional -->
-    <ul class="pager">
-      <li><a href="#"><span></span></a></li>
-      <li><a href="#"><span></span></a></li>
-      <li><a href="#"><span></span></a></li>
-      <li><a href="#"><span></span></a></li>
-      <li><a href="#"><span></span></a></li>
-      <li><a href="#"><span></span></a></li>
-      <li><a href="#"><span></span></a></li>
-      <li><a href="#"><span></span></a></li>
-      <li><a href="#"><span></span></a></li>
-    </ul>
-    <!-- /Optional -->
-  </div>
-</div>
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure> 
+              <%= link_to (image_tag "sets/#{params[:set]}/seasons_winter.jpg", :alt => "Seasons (Winter), Anne Storrs & David Bales, Sculpture, University of Oregon, 1995" + ', ' + @set.title), '#' %>
+              <figcaption> <%= link_to "Seasons (Winter), Anne Storrs & David Bales, Sculpture, University of Oregon, 1995", '#' %> </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure> 
+              <%= link_to (image_tag "sets/#{params[:set]}/almost_freezing.jpg", :alt => "Almost Freezing, Thomas Sayre, Sculpture, Eastern Oregon University, 2003" + ', ' + @set.title), '#' %>
+              <figcaption> <%= link_to "Almost Freezing, Thomas Sayre, Sculpture, Eastern Oregon University, 2003", '#' %> </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure> 
+              <%= link_to (image_tag "sets/#{params[:set]}/raven_brings_the_salmon.jpg", :alt => "Raven Brings the Salmon, Audrey May Hatfield, Painting, Oregon State University, 1998" + ', ' + @set.title), '#' %>
+              <figcaption> <%= link_to "Raven Brings the Salmon, Audrey May Hatfield, Painting, Oregon State University, 1998", '#' %> </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure> 
+              <%= link_to (image_tag "sets/#{params[:set]}/river_frontage.jpg", :alt => "River Frontage, Jack Portland, Painting, Department of Transportation, 1985" + ', ' + @set.title), '#' %>
+              <figcaption> <%= link_to "River Frontage, Jack Portland, Painting, Department of Transportation, 1985", '#' %> </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure> 
+              <%= link_to (image_tag "sets/#{params[:set]}/vega.jpg", :alt => "Vega, William (Bill) Moore, Sculpture, Public Service Building, 1990" + ', ' + @set.title), '#' %>
+              <figcaption> <%= link_to "Vega, William (Bill) Moore, Sculpture, Public Service Building, 1990", '#' %> </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure> 
+              <%= link_to (image_tag "sets/#{params[:set]}/parrot_tulips_ii.jpg", :alt => "Parrot Tulips II, Sherrie Wolf, Painting, Oregon State University, 1995" + ', ' + @set.title), '#' %>
+              <figcaption> <%= link_to "Parrot Tulips II, Sherrie Wolf, Painting, Oregon State University, 1995", '#' %> </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure> 
+              <%= link_to (image_tag "sets/#{params[:set]}/a_classic_jump_off.jpg", :alt => "A Classic Jump-Off, James Kirk, Painting, Executive Building, 1982" + ', ' + @set.title), '#' %>
+              <figcaption> <%= link_to "A Classic Jump-Off, James Kirk, Painting, Executive Building, 1982", '#' %> </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure> 
+              <%= link_to (image_tag "sets/#{params[:set]}/untitled_douglas.jpg", :alt => "Untitled, Douglas Frank, Photograph, Veteran's Affairs Building, 1984" + ', ' + @set.title), '#' %>
+              <figcaption> <%= link_to "Untitled, Douglas Frank, Photograph, Veteran's Affairs Building, 1984", '#' %> </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure> 
+              <%= link_to (image_tag "sets/#{params[:set]}/aquarium_vase.jpg", :alt => "Aquarium Vase, James E. Nowak, Glass art, Department of Transportation, 1995" + ', ' + @set.title), '#' %>
+              <figcaption> <%= link_to "Aquarium Vase, James E. Nowak, Glass art, Department of Transportation, 1995", '#' %> </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+        <!-- /Optional -->
+      </div>
+    </div>
 
-<p>Passed in 1975, Oregon's Percent for Art legislation mandates that 1% of the direct construction funds of new or remodeled state buildings with construction budgets of $100,000 or more be set aside for the acquisition of art work. The <a href="http://www.oregonartscommission.org/public_art/" target="_blank">Oregon Arts Commission</a> oversees the Program and maintains archives of slides, photographs and related documentation for the works of art selected. </p>
+    <p>Passed in 1975, Oregon's Percent for Art legislation mandates that 1% of the direct construction funds of new or remodeled state buildings with construction budgets of $100,000 or more be set aside for the acquisition of art work. The <a href="http://www.oregonartscommission.org/public_art/" target="_blank">Oregon Arts Commission</a> oversees the Program and maintains archives of slides, photographs and related documentation for the works of art selected. </p>
 
-<p> Encompassing over a 30-year period, the database offers access to over 5200 items. The collection offers glimpses of 1545 unique artwork creations, visual narratives of the creative process, and documentation. </p>
+    <p> Encompassing over a 30-year period, the database offers access to over 5200 items. The collection offers glimpses of 1545 unique artwork creations, visual narratives of the creative process, and documentation. </p>
 
-<h3>Acknowledgements</h3>
+    <h3>Acknowledgements</h3>
 
-<p>This project is a collaboration between the <a href="http://www.oregonartscommission.org/public_art/percent_for_public_art_program.php">Oregon Arts Commission</a> and the <a href="http://libweb.uoregon.edu">University of Oregon Libraries</a>. </p>
+    <p>This project is a collaboration between the <a href="http://www.oregonartscommission.org/public_art/percent_for_public_art_program.php">Oregon Arts Commission</a> and the <a href="http://libweb.uoregon.edu">University of Oregon Libraries</a>. </p>
 
-<p>It is supported in part by the Institute of Museum and Library Services through the Library Services and Technology Act, and is administered by the Oregon State Library. </p>
-<p><%= link_to (image_tag "sets/#{params[:set]}/IMLS_Logo_2c.jpg", :alt => "Institute of Museum and Library Services"), 'http://imls.gov' %></p>
+    <p>It is supported in part by the Institute of Museum and Library Services through the Library Services and Technology Act, and is administered by the Oregon State Library. </p>
+    <p><%= link_to (image_tag "sets/#{params[:set]}/IMLS_Logo_2c.jpg", :alt => "Institute of Museum and Library Services"), 'http://imls.gov' %></p>
