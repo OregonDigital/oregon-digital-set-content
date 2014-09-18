@@ -1,11 +1,17 @@
 
     <!-- Description -->
     <div class="left-image span4">
-
       <div class="blueberry">
       <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
       <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
         <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/homer_barnett_papers.jpg", :alt => "Homer Barnett Papers" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Homer Barnett Papers" '#' %></figcaption>
+            </figure>
+          </li>          
           <li>
             <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/alaska_mining_and_prospecting_company_records.jpg", :alt => "Alaska Mining and Prospecting Company Records" + ', ' + @set.title), '#' %>
@@ -16,12 +22,6 @@
             <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/northwest_photography.jpg", :alt => "Northwest Photography" + ', ' + @set.title), '#' %>
               <figcaption><%= link_to "Northwest Photography", '#' %></figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/homer_barnett_papers.jpg", :alt => "Homer Barnett Papers" + ', ' + @set.title), '#' %>
-              <figcaption><%= link_to "Homer Barnett Papers" '#' %></figcaption>
             </figure>
           </li>
           <li>
@@ -78,6 +78,6 @@
       
     </div>
 
-    <p>The Tribal Legacies digital collection is the first  step in providing extended access to materials pertaining to Native American  ethnography and history in the University of Oregon Libraries. This digital  collection brings together information from UO Libraries’ documents, maps,  photographs, and manuscript collections. Focusing on the Pacific Northwest, the  collections feature archival materials that contain either brief references to  indigenous people or are completely dedicated to their coverage.  In the spirit of document accessibility,  Tribal Legacies highlights relevant collections, from nineteenth century Alaska  Native ethnography to Klamath Restoration, to provide a comprehensive source  for academic research and Native American documentation.</p>
-       
+    <p>The Tribal Legacies digital collection is the first step in providing extended access to materials pertaining to Native American ethnography and history in the University of Oregon Libraries. This digital collection brings together information from UO Libraries&rsquo; documents, maps, photographs, and manuscript collections. Focusing on the Pacific Northwest, the collections feature archival materials that contain either brief references to indigenous people or are completely dedicated to their coverage. In the spirit of document accessibility, Tribal Legacies highlights relevant collections, from nineteenth century Alaska Native ethnography to Klamath Restoration, to provide a comprehensive source for academic research and Native American documentation.</p>
+
     <p><a href="https://library.uoregon.edu/sites/default/files/tribal_legacies_20130823.pdf">View Catalog (PDF)</a></p>

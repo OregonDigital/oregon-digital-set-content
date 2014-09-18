@@ -1,11 +1,17 @@
 
     <!-- Description -->
     <div class="left-image span4">
-
       <div class="blueberry">
       <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
       <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
         <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/construction_interstate_bridge.jpg", :alt => "Construction of fill for Interstate Bridge, Portland, Angelus Studio Collections" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Construction of fill for Interstate Bridge, Portland, Angelus Studio Collections", '#' %></figcaption>
+            </figure>
+          </li>
           <li>
             <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/view_of_multnomah_falls.jpg", :alt => "View of Multnomah Falls, Angelus Studio Collections" + ', ' + @set.title), '#' %>
@@ -54,12 +60,6 @@
               <figcaption><%= link_to "Stupendous Log-Raft, containing millions of feet, Print Collection", '#' %></figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/construction_interstate_bridge.jpg", :alt => "Construction of fill for Interstate Bridge, Portland, Angelus Studio Collections" + ', ' + @set.title), '#' %>
-              <figcaption><%= link_to "Construction of fill for Interstate Bridge, Portland, Angelus Studio Collections", '#' %></figcaption>
-            </figure>
-          </li>
         </ul>
       <!-- Optional -->
         <ul class="pager">
@@ -82,4 +82,4 @@
 
     <h3>Acknowledgements</h3>
 
-    <p>University of Oregon's participation in the <a href="http://westernwater.org">Western Waters Digital Library (WWDL)</a> project was led by the <a href="http://sites.google.com/a/gwla.org/greater-western-library-alliance/Home">Greater Western Library Alliance</a> <a href="http://sites.google.com/a/gwla.org/greater-western-library-alliance/Home">(GWLA)</a> and funded in 2003 with a two-year National Leadership Grant from the <a href="http://www.imls.gov/">Institute of Museum and Library Services (IMLS)</a>.</p>
+    <p>University of Oregon&rsquo;s participation in the <a href="http://westernwater.org">Western Waters Digital Library (WWDL)</a> project was led by the <a href="http://sites.google.com/a/gwla.org/greater-western-library-alliance/Home">Greater Western Library Alliance</a> <a href="http://sites.google.com/a/gwla.org/greater-western-library-alliance/Home">(GWLA)</a> and funded in 2003 with a two-year National Leadership Grant from the <a href="http://www.imls.gov/">Institute of Museum and Library Services (IMLS)</a>.</p>

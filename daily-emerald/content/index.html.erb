@@ -1,34 +1,37 @@
-<!-- Description -->
 
-<div class="left-image span4">
-  <div class="blueberry">
-    <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
-    <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
-    <ul class="slides crop">
-      <li>
-        <figure> <%= link_to (image_tag "sets/#{params[:set]}/ode_111_13.jpg", :alt => "Oregon Daily Emerald, September 21, 2009" + ', ' + @set.title), '#' %>
-          <figcaption> <%= link_to "Oregon Daily Emerald, September 21, 2009Oregon Daily Emerald, September 21, 2009", '#' %> </figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure> <%= link_to (image_tag "sets/#{params[:set]}/ode_109_101.jpg", :alt => "Oregon Daily Emerald, February 7, 2008" + ', ' + @set.title), '#' %>
-          <figcaption> <%= link_to "Oregon Daily Emerald, February 7, 2008", '#' %> </figcaption>
-        </figure>
-      </li>
-    </ul>
-    <!-- Optional -->
-    <ul class="pager">
-      <li><a href="#"><span></span></a></li>
-      <li><a href="#"><span></span></a></li>
-    </ul>
-    <!-- /Optional -->
-  </div>
-</div>
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/ode_111_13.jpg", :alt => "Oregon Daily Emerald, September 21, 2009" + ', ' + @set.title), '#' %>
+              <figcaption> <%= link_to "Oregon Daily Emerald, September 21, 2009Oregon Daily Emerald, September 21, 2009", '#' %> </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/ode_109_101.jpg", :alt => "Oregon Daily Emerald, February 7, 2008" + ', ' + @set.title), '#' %>
+              <figcaption> <%= link_to "Oregon Daily Emerald, February 7, 2008", '#' %> </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+        <!-- /Optional -->
+      </div>
+    </div>
 
-<p>The <em>Oregon Daily Emerald</em> (ODE) Archives is a full text searchable database of past ODE issues. The current collection began with issues in September 2005. At this time, there are no plans to digitize older issues of the <em>Oregon Daily Emerald</em>.</p>
+    <p>The <em>Oregon Daily Emerald</em> (ODE) Archives is a full text searchable database of past ODE issues. The current collection began with issues in September 2005. At this time, there are no plans to digitize older issues of the <em>Oregon Daily Emerald</em>.</p>
 
-<p>An<em> Oregon Daily Emerald</em> photographs can be purchased from ODE at <a href="http://reprints.dailyemerald.com">http://reprints.dailyemerald.com</a>.</p>
+    <p>An<em> Oregon Daily Emerald</em> photographs can be purchased from ODE at <a href="http://reprints.dailyemerald.com">http://reprints.dailyemerald.com</a>.</p>
 
-<p>All material is copyrighted by Oregon Daily Emerald Publishing Co., Inc. All Rights Reserved. <a href="http://www.europeana.eu/rights/rr-f/">Free Access - No Re-Use</a>.</p>
+    <p>All material is copyrighted by Oregon Daily Emerald Publishing Co., Inc. All Rights Reserved. <a href="http://www.europeana.eu/rights/rr-f/">Free Access - No Re-Use</a>.</p>
 
-<p>Visit the <a href="http://www.dailyemerald.com/">Oregon Daily Emerald</a> website.</p>
+    <p>Visit the <a href="http://www.dailyemerald.com/">Oregon Daily Emerald</a> website.</p>

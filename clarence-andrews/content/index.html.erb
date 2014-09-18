@@ -1,0 +1,24 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH001_0502.jpg", :alt => "Two men holding an ice ax and peering into a glacial crevasse" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Two men holding an ice ax and peering into a glacial crevasse", '#' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>Clarence L. Andrews (1862-1948) documented and collected documentation on native life, natural resources, and exploration of Alaska and the Yukon. The collection (1805-1948) consists of approximately 1600 prints and 75 negatives by more than 60 photographers, dealing almost exclusively with Alaska and the Yukon. Main subjects include the towns of Sitka, Skagway, Eagle, and Valdez; modes of transportation, from reindeer and dogs to railroads, ships, and kayaks; Native Americans; totems; wildlife and natural resources.</p>

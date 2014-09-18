@@ -1,0 +1,72 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH036_5052.jpg", :alt => "The Cayuse Twins, in cradles, crying, Moorhouse Collection, PH036-5052" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "The Cayuse Twins, in cradles, crying, Moorhouse Collection, PH036-5052", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH036_4016.jpg", :alt => "Lee Coyote Cayuse Tribe, Moorhouse Collection, PH036-4016" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Lee Coyote Cayuse Tribe, Moorhouse Collection, PH036-4016", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH036_4083.jpg", :alt => "Jennie Peo, with child, Moorhouse Collection, PH036-4083" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Jennie Peo, with child, Moorhouse Collection, PH036-4083", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH036_4089.jpg", :alt => "Victor William Cayuse Tribe, Moorhouse Collection, PH036-4089" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Victor William Cayuse Tribe, Moorhouse Collection, PH036-4089", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH036_1439.jpg", :alt => "Major Moorhouse's Indian Curios Pendelton Or, Moorhouse Collection, PH036-1439" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Major Moorhouse's Indian Curios Pendelton Or, Moorhouse Collection, PH036-1439", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH036_4293.jpg", :alt => "Chief Bones and wife Palouse Tribe, Moorhouse Collection, PH036-4293" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Chief Bones and wife Palouse Tribe, Moorhouse Collection, PH036-4293", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH036_4007.jpg", :alt => "Anna Coyote, Cayuse Indian, in beaded dress, holding implements, Moorhouse Collection, PH036-4007" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Anna Coyote, Cayuse Indian, in beaded dress, holding implements, Moorhouse Collection, PH036-4007", '#' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>Major Lee Moorhouse of Pendleton, Oregon was an Indian Agent for the Umatilla Indian Reservation and a photographer. From 1888 to 1916 he produced over 9,000 images which document urban, rural, and Native American life in the Columbia Basin, and particularly Umatilla County, Oregon. So extensive and revealing are Moorhouse&rsquo;s images that his collection is one of the preeminent social history collections for Oregon. <a href="http://libweb.uoregon.edu/speccoll/">Special Collections &amp; University Archives</a> of the University of Oregon Libraries has a collection of 7000 images by Major Moorhouse.</p>
+
+    <p><%= link_to (image_tag "sets/#{params[:set]}/tam.jpg", :alt => "Tamástslikt Cultural Institute" + ', ' + @set.title), 'http://www.tamastslikt.com/' %></p>
+
+    <h3>Acknowledgements</h3>
+
+    <p>Picturing the Cayuse, Walla Walla, and Umatilla Tribes is a collaborative project among the <a href="http://www.tamastslikt.com/">Tam&aacute;stslikt Cultural Institute (TCI)</a> of the <a href="http://www.umatilla.nsn.us/"> Confederated Tribes of the Umatilla Indian Reservation</a>, the <a href="http://library.uoregon.edu/">University of Oregon (UO) Libraries</a>, and <a href="http://www.wiche.edu/">Western Interstate Commission for Higher Education (WICHE)</a>. Partial funding has been provided by the <a href="http://www.nwacc.org/">Northwest Academic Computing Consortium (NWACC)</a>.</p>

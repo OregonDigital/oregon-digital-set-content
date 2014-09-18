@@ -1,0 +1,31 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/Guer_Grea_01.jpg", :alt => "Guerrilla Girls Greatest Hits, 1991" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Guerrilla Girls Greatest Hits, 1991", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/Lowd_Susa_03.jpg", :alt => "Lowdermilk, Susan: XO: On what might have been our anniversary." + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Lowdermilk, Susan: XO", '#' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>Artists&rsquo; books have been described as the &ldquo;quintessential 20th century art form&rdquo; (Drucker, Johanna. The Century of Artists Books. New York: Granary Books, 1994). Indeed, though there were many predecessors to the contemporary artist&rsquo;s book, the form was really born in the late &rsquo;50s and early &rsquo;60s. The collection at the Architecture and Allied Arts Library, which is supported and extended by artists&rsquo; books in Knight Library&rsquo;s Special Collections, spans the history of these works of art in book form from 1957 to books by artists today with special emphasis on artists working in the Pacific Northwest. The collection is represented here with images and data describing binding style, structure type, technique, literary style and materials.</p>

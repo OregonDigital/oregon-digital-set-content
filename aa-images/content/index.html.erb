@@ -1,0 +1,80 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/as_you_sow.jpg", :alt => "As you sow...; Aquellos polbos" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "As you sow...; Aquellos polbos", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/aubrey_beardsley.jpg", :alt => "Aubrey Beardsley" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Aubrey Beardsley", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/portrait_hongxi.jpg", :alt => "Portrait of the Hongxi Emperor" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Portrait of the Hongxi Emperor", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/beautiful_fatima.jpg", :alt => "Beautiful Fatima and her Troupe" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Beautiful Fatima and her Troupe" '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/three_beauties.jpg", :alt => "Three Beauties Representing Snow, the Moon, and Flowers" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Three Beauties Representing Snow, the Moon, and Flowers", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/villa_mysteries.jpg", :alt => "Villa of the Mysteries. Initiation chamber wall paintings" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Villa of the Mysteries. Initiation chamber wall paintings", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/moon_pine.jpg", :alt => "Moon Pine at Ueno" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Moon Pine at Ueno", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/bathing_costumes.jpg", :alt => "Bathing Costumes, shoes, and shirts, from Harper's Bazaar, June 18, 1892" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Bathing Costumes, shoes, and shirts, from Harper's Bazaar, June 18, 1892", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/city_detroit.jpg", :alt => "City of Detroit. Plan" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "City of Detroit. Plan", '#' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>Browse the Art and Architecture Images database (AAI), a collection of high resolution jpegs created for personal study, teaching and research. AAI is limited to affiliates of the University of Oregon and can be accessed on networked terminals or through the <a href="http://it.uoregon.edu/services/vpn">UO Virtual Private Network (VPN)</a>.</p>

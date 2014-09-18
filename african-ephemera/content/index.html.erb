@@ -1,0 +1,33 @@
+
+    <!-- Description -->
+    <div class="left-image span4"> 
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/african1.jpg", :alt => "Blue and yellow cloth with many small images of women engaged in various activities, with the text \"International Women's Day March 8\" in English and French." + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "International Women's Day Cloth", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/african2.jpg", :alt => "Red, white, blue and black textile with dollar bills and dollar signs all over and surrounded by a border of United States flags. There is also a small box with text that reads, \"UKINIPENDA USINIPENDE HIYO UTAJAZA WEWE\"" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "US Dollar Pagne", '#' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>The African Political Ephemera and Realia Project is an online collection of ephemeral material — pamphlets, t-shirts, cloths, posters, to name just a few examples — that documents the material culture of politics in Sub-Saharan Africa. Ephemeral political material often does not find its way into institutional collections either because the material is discarded before it draws the attention of collectors, because it is too popular and mass-produced to merit consideration as art, or because it does not fit easily (either physically or intellectually) into the book- and manuscript-based realm of libraries. The African Political Ephemera Project hopes to focus attention on the significance of ephemeral political material as cultural artifacts that document both the political processes and the social and cultural forces at work in Sub-Saharan Africa.</p>
+
+    <p>The African Political Ephemera and Realia Project is a collaboration between the <a href="http://africa.uoregon.edu/">African Studies Program</a> and the <a href="http://libweb.uoregon.edu/">UO Libraries</a>.</p>

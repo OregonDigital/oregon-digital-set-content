@@ -1,0 +1,24 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH037_0929.jpg", :alt => "A blimp with the word 'Gelatine' on its surface" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "A blimp with the word 'Gelatine' on its surface", '#' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>The Angelus Studio was a professional photographic company located in Portland, Oregon. The collection includes works by George M. Weister (1862-1922) and Arthur M. Prentiss (dates undetermined) among the studio photographers; owner Fred Clark also acquired images by previous local photographers including Partridge. The Angelus Studio collection provides extraordinary documentation of the city of Portland, the Lewis &amp; Clark Exposition of 1905, Oregon landmarks, and commercial operations including logging and fish packing.</p>

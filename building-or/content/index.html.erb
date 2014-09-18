@@ -1,0 +1,86 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/portlandbuilding.jpg", :alt => "Portland Building (Portland, Oregon)" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Portland Building (Portland, Oregon)", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/goodpasturecoveredbridge.jpg", :alt => "Goodpasture Covered Bridge (Vida, Oregon)" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Goodpasture Covered Bridge", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/barn.jpg", :alt => "Barn (Oakland, Oregon)" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Barn (Oakland, Oregon)", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/yaquinaheadlighthouse.jpg", :alt => "Yaquina Head Lighthouse (Newport, Oregon)" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Yaquina Head Lighthouse", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/bergcharlesfstore.jpg", :alt => "Berg, Charles F., Store (Portland, Oregon)" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Berg, Charles F., Store", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/ainsworthblock.jpg", :alt => "Ainsworth Block (Portland, Oregon)" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Ainsworth Block", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/west_block_pdx.jpg", :alt => "West's Block, Minerva iron capital, Architectural Heritage Center (Portland, Oregon)" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "West's Block, Minerva iron capital, Architectural Heritage Center", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/watertower.jpg", :alt => "Water Tower (Rock Point, Oregon)" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Water Tower (Rock Point, Oregon)", '#' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/unitedstatesnationalbank.jpg", :alt => "United States National Bank (Portland, Oregon)" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "United States National Bank (Portland, Oregon)", '#' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>Building Oregon: Architecture of Oregon and the Pacific Northwest provides approximately 20,000 images with accompanying documentation about the architectural heritage of the Pacific Northwest with special emphasis on Oregon&rsquo;s historic sites and built environment.</p> 
+
+    <p>A significant number of images come from slides donated to the University of Oregon Libraries, including the <a href="http://nwda-db.wsulibs.wsu.edu/ark:/80444/xv30446">collections of architectural historian Marion Dean Ross</a>, preservationist Michael Shellenbarger, and architect C. Gilman Davis. As a result of continuing collaboration with the <a href="http://egov.oregon.gov/OPRD/HCD/SHPO/">Oregon State Historic Preservation Office</a>, many documents in the collection represent works listed on the <a href="http://www.nps.gov/nr">National Register of Historic Places</a>.</p>
+
+    <h3>Acknowledgements</h3>
+
+    <p>Substantial support for this collection comes from the bequest of Jean Gillett, a graduate of the University of Oregon School of Architecture and Allied Arts. The <a href="http://www.af-oregon.org/">Architecture Foundation of Oregon</a> and the <a href="http://www.sahmdr.org/">Marion Dean Ross/Pacific Northwest Chapter of the Society of Architectural Historians</a> have also contributed to the development of this project. Content from the <a href="http://egov.oregon.gov/OPRD/HCD/SHPO/">Oregon State Historic Preservation Office</a> has enriched the scope and value of this resource. Christine L. Sundt, the Visual Resources Curator, UO Libraries, 1985-2005, collected, preserved, and made accessible the majority of the slides that constitute the source of this digital collection. Those who have researched and documented these important works over many decades deserve the most appreciation.</p>

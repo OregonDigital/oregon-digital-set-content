@@ -1,0 +1,24 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH033_0001.jpg", :alt => "A man identified as Martin Schmitt is lying in the grass in front of an appaloosa horse" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "Martin Schmitt lying in the grass in front of horse", '#' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>Orla G. Allen (dates unknown), commonly known as O.G. Allen, was a professional photographer operating in Pendleton, Oregon, circa 1910-1920. &ldquo;Electric Studio&rdquo; is a franchise name that appeared in locations throughout the West. The collection documents rodeo people and activities, and a Pendleton event. Unknown. Possibly a donation from Lee D. Drake of Pendleton.</p>

@@ -1,0 +1,24 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH297_CM_24.jpg", :alt => "A piece of paper bearing an image of a classical sculpture" + ', ' + @set.title), '#' %>
+              <figcaption><%= link_to "A piece of paper bearing an image of a classical sculpture", '#' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>Dan Powell is an Associate Professor and Head of the Photography Program in the Department of Art at the University of Oregon, and has shown his work extensively both on the national and international level. As an artist, his work includes constructed imagery done in the studio as well as social landscape and physical landscape imagery ranging from such diverse areas as Eastern Oregon and the Western United States to New York City and various European Countries. Typically, his work is interpretive and expressive in nature.</p>
