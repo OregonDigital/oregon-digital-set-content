@@ -1,75 +1,69 @@
 
   <!-- Description -->
-   <div class="left-image span4">
+    <div class="left-image span4">
 
-     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-       <!-- Wrapper for slides -->
-       <div class="carousel-inner">
-         <div class="item active">
-           <%= link_to (image_tag "sets/#{params[:set]}/P_218_SG_1_42_01.jpg", :alt => "Sunrise on Mt. Hood from Lost Lake" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Sunrise on Mt. Hood from Lost Lake", '/catalog/oregondigital:0k225b07h' %>
-           </div>
-         </div>
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/P_218_SG_1_42_01.jpg", :alt => "Sunrise on Mt. Hood from Lost Lake" + ', ' + @set.title), '/catalog/oregondigital:n009w2739' %> 
+              <figcaption><%= link_to "Sunrise on Mt. Hood from Lost Lake", '/catalog/oregondigital:n009w2739' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/P_218_SG_1_38_10.jpg", :alt => "Steamer Bailey Gatzert Approaching Cascade Locks" + ', ' + @set.title), '/catalog/oregondigital:1544bp54h' %> 
+              <figcaption><%= link_to "Steamer Bailey Gatzert Approaching Cascade Locks", '/catalog/oregondigital:1544bp54h' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/P_218_SG_1_48_15.jpg", :alt => 'Ship aground on beach, Oregon coast' + ', ' + @set.title), '/catalog/oregondigital:v405s974f' %> 
+              <figcaption><%= link_to 'Ship aground on beach, Oregon coast', '/catalog/oregondigital:v405s974f' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/P_218_SG_1_28_02.jpg", :alt => "Benjamin A. Gifford with 8x10 view camera" + ', ' + @set.title), '/catalog/oregondigital:dr26xx77t' %> 
+              <figcaption><%= link_to "Benjamin A. Gifford with 8x10 view camera", '/catalog/oregondigital:dr26xx77t' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/P_218_SG_1_37_14.jpg", :alt => "Portrait of Peu-Peu-Mox-Mox of the Nez Perce tribe" + ', ' + @set.title), '/catalog/oregondigital:44558d659' %> 
+              <figcaption><%= link_to "Portrait of Peu-Peu-Mox-Mox of the Nez Perce tribe", '/catalog/oregondigital:44558d659' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/P_218_SG_1_37_04.jpg", :alt => "Indian Madonna" + ', ' + @set.title), '/catalog/oregondigital:8p58pd27m' %> 
+              <figcaption><%= link_to "Indian Madonna", '/catalog/oregondigital:8p58pd27m' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/P_218_SG_1_49_04.jpg", :alt => "Gifford's Falls, base of Mt. Hood" + ', ' + @set.title), '/catalog/oregondigital:ng451h841' %> 
+              <figcaption><%= link_to "Gifford's Falls, base of Mt. Hood", '/catalog/oregondigital:ng451h841' %></figcaption>
+            </figure>
+          </li>
 
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/P_218_SG_1_38_10.jpg", :alt => "Steamer Bailey Gatzert Approaching Cascade Locks" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Steamer Bailey Gatzert Approaching Cascade Locks", '/catalog/oregondigital:76537134t' %>
-           </div>
-         </div>
+        </ul>
 
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/P_218_SG_1_48_15.jpg", :alt => 'Ship aground on beach, Oregon coast' + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to 'Ship aground on beach, Oregon coast', '/catalog/oregondigital:r494vk17h' %>
-           </div>
-         </div>
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      </div>
 
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/P_218_SG_1_28_02.jpg", :alt => "Benjamin A. Gifford with 8x10 view camera" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Benjamin A. Gifford with 8x10 view camera", '/catalog/oregondigital:z890rt26b' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/P_218_SG_1_37_14.jpg", :alt => "Portrait of Peu-Peu-Mox-Mox of the Nez Perce tribe" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Portrait of Peu-Peu-Mox-Mox of the Nez Perce tribe", '/catalog/oregondigital:1g05fb61q' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/P_218_SG_1_37_04.jpg", :alt => "Indian Madonna" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Indian Madonna", '/catalog/oregondigital:r781wg05z' %>
-           </div>
-         </div>
-
-         <div class="item">
-           <%= link_to (image_tag "sets/#{params[:set]}/P_218_SG_1_49_04.jpg", :alt => "Gifford's Falls, base of Mt. Hood" + ', ' + @set.title), '#' %>
-           <div class="carousel-caption">
-             <%= link_to "Gifford's Falls, base of Mt. Hood", '/catalog/oregondigital:h415p9589' %>
-           </div>
-         </div>
-
-         <!-- Indicators -->
-       </div>
-       <!-- Controls -->
-       <ol class="carousel-indicators">
-         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-         <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-       </ol>
-       <a class="carousel-control left" href="#carousel-example-generic" data-slide="prev">&lsaquo;</a>
-       <a class="carousel-control right" href="#carousel-example-generic" data-slide="next">&rsaquo;</span>
-       </a>
-     </div>
+    </div>
 
   </div>
 
