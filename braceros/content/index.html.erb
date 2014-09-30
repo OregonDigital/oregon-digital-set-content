@@ -1,6 +1,82 @@
 <div id="<%= params[:set] %>">
 
-<p class="banner-image"> <%= image_tag "sets/#{params[:set]}/banner.gif", :alt => @set.title %> </p>
+<!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+			  <%= link_to (image_tag "sets/#{params[:set]}/braceros-g158bh28p.jpg", :alt => "Thinning apple trees" + ', ' + @set.title), '/catalog/oregondigital:g158bh28p' %>
+			  <figcaption><%= link_to "Thinning apple trees ", '/catalog/oregondigital:g158bh28p' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+			  <%= link_to (image_tag "sets/#{params[:set]}/braceros-4x51hj00j.jpg", :alt => "Directing the crews" + ', ' + @set.title), '/catalog/oregondigital:4x51hj00j' %>
+			  <figcaption><%= link_to "Directing the crews", '/catalog/oregondigital:4x51hj00j' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+			  <%= link_to (image_tag "sets/#{params[:set]}/braceros-1v53jw96n.jpg", :alt => "Sugar beet worker" + ', ' + @set.title), '/catalog/oregondigital:1v53jw96n' %>
+			  <figcaption><%= link_to "Sugar beet worker", '/catalog/oregondigital:1v53jw96n' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+			  <%= link_to (image_tag "sets/#{params[:set]}/braceros-5138jd84x.jpg", :alt => "Worker with tomatoes" + ', ' + @set.title), '/catalog/oregondigital:5138jd84x' %> 
+			  <figcaption><%= link_to "Worker with tomatoes", '/catalog/oregondigital:5138jd84x' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+			  <%= link_to (image_tag "sets/#{params[:set]}/braceros-nc580m649.jpg", :alt => "Picking cherries" + ', ' + @set.title), '/catalog/oregondigital:nc580m649' %> 
+			  <figcaption><%= link_to "Picking cherries", '/catalog/oregondigital:nc580m649' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+			  <%= link_to (image_tag "sets/#{params[:set]}/braceros-6w924b80w.jpg", :alt => "Sacking harvested potatoes" + ', ' + @set.title), '/catalog/oregondigital:6w924b80w' %> 
+			  <figcaption><%= link_to "Sacking harvested potatoes", '/catalog/oregondigital:6w924b80w' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+			  <%= link_to (image_tag "sets/#{params[:set]}/braceros-2f75r800t.jpg", :alt => "Picking belt" + ', ' + @set.title), '/catalog/oregondigital:2f75r800t' %> 
+			  <figcaption><%= link_to "Picking belt", '/catalog/oregondigital:2f75r800t' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+			  <%= link_to (image_tag "sets/#{params[:set]}/braceros-ns0646000.jpg", :alt => "Man with sack of apples" + ', ' + @set.title), '/catalog/oregondigital:ns0646000' %> 
+			  <figcaption><%= link_to "Man with sack of apples", '/catalog/oregondigital:ns0646000' %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+			  <%= link_to (image_tag "sets/#{params[:set]}/braceros-1n79h428d.jpg", :alt => "Tomato harvesters" + ', ' + @set.title), '/catalog/oregondigital:1n79h428d' %> 
+			  <figcaption><%= link_to "Tomato harvesters", '/catalog/oregondigital:1n79h428d' %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
 
 <p><strong>An archival photograph collection of the Braceros that worked in the agricultural fields and orchards of Oregon, 1942-1947.</strong></p>
 
