@@ -1,0 +1,46 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/1887commencement.jpg", :alt => "Oregon Agricultural College Commencement Program, June 8, 1887" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx71b930g" %>
+              <figcaption><%= link_to "Commencement Program, 1887", "/sets/#{params[:set]}/oregondigital:fx71b930g" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/1943commencement.jpg", :alt => "Oregon State College Commencement Program, May 29, 1943" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx71b961g" %>
+              <figcaption><%= link_to "Commencement Program, May 1943", "/sets/#{params[:set]}/oregondigital:fx71b961g" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/1969commencement.jpg", :alt => "Oregon State University Commencement Program, June 8, 1969" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx71bb03s" %>
+              <figcaption><%= link_to "Commencement Program, 1969", "/sets/#{params[:set]}/oregondigital:fx71bb03s" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/1980commencement.jpg", :alt => "Oregon State University Commencement Program, June 1, 1980" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx71bb07w" %>
+              <figcaption><%= link_to "Commencement Program, 1980", "/sets/#{params[:set]}/oregondigital:fx71bb07w" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+<p>The Oregon State University Commencement Programs document degrees awarded by Oregon State University since 1870.  In addition to a program for the annual graduation ceremony in May or June, these publications include lists of graduates, honors and awards, and major gifts to the university during the previous academic year.  In the 1943-1944 academic year, during World War II, graduation exercises were held in December of 1943 as well as March and June of 1944.</p>
