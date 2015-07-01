@@ -1,0 +1,38 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH204_Bx9b_f32_0001.jpg", :alt => "Black and white portrait of several young people." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66rr65x" %>
+              <figcaption><%= link_to "Young People", "/sets/#{params[:set]}/oregondigital:df66rr65x" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH204_Bx9b_f14_0001.jpg", :alt => "Black and white image of Opal Whiteley standing in front of a building." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66rr534" %>
+              <figcaption><%= link_to "Opal Whiteley", "/sets/#{params[:set]}/oregondigital:df66rr534" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH204_Bx9b_f41_0001.jpg", :alt => "Black and white image of a man and woman with children and dogs." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66rr76f" %>
+              <figcaption><%= link_to "Man and Woman With Children and Dogs", "/sets/#{params[:set]}/oregondigital:df66rr76f" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>Opal Stanley Whiteley (1897&ndash;?) was an author and speaker who studied biology and professed harmony with nature in her book, <em>The Fairyland Around Us</em> (Los Angeles, 1918) Whitely was raised in a logging camp in Lane County, Oregon, and later published a poetic diary, <em>The Story of Opal</em>, purportedly written during her childhood.</p>

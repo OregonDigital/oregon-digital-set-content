@@ -1,0 +1,38 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH103_08.jpg", :alt => "Studio portrait of Mayo Methot in a kimono, looking at camera." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66tr772" %>
+              <figcaption><%= link_to "Studio portrait of Mayo Methot", "/sets/#{params[:set]}/oregondigital:df66tr772" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH103_17.jpg", :alt => "Humphrey Bogart lighting Mayo Methot's cigarette." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66tr79m" %>
+              <figcaption><%= link_to "Humphrey Bogart Lighting Mayo Methot's Cigarette", "/sets/#{params[:set]}/oregondigital:df66tr79m" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH103_21.jpg", :alt => "Mayo Methot and Humphrey Bogart on couch with two Scots terriers." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66tr836" %>
+              <figcaption><%= link_to "Mayo Methot and Humphrey Bogart", "/sets/#{params[:set]}/oregondigital:df66tr836" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>Mayo Methot Bogart (1904&ndash;1951) was an American film and theatre actress. She was married to Humphrey Bogart from 1938 to 1945. The collection consists of candid shots of the couple and portraits of their friends. Other Bogart images are included in the Von Rhein collection.</p>
