@@ -1,0 +1,38 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH203_05-23.jpg", :alt => "Black and white image. Mr. Hartshorn, Hazel Hartshorn and another child stand in the entrance of a quartz mining tunnel that is surrounded by boulders." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66xd83n" %>
+              <figcaption><%= link_to "Mr. Hartshorn, Hazel Hartshorn and Another Child", "/sets/#{params[:set]}/oregondigital:df66xd83n" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH203_05-07.jpg", :alt => "Black and white image. A man stands in front of a mix of four horses and three mules with canvas packs and wooden boxes on their backs." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66xd945" %>
+              <figcaption><%= link_to "Man With Horses and Mules", "/sets/#{params[:set]}/oregondigital:df66xd945" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/PH203_05-08.jpg", :alt => "Black and white image. A man with his back to the camera is carrying a pack loaded with mining supplies." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66xd91b" %>
+              <figcaption><%= link_to "Man With Mining Supplies", "/sets/#{params[:set]}/oregondigital:df66xd91b" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>Florence M. Hartshorn (1869&ndash;1943) was a photographer who lived in the Yukon during the gold rush. The collection consists of an album and loose prints made by Mrs. Hartshorn and her husband, documenting the landscape of the region, entrepreneurs and residents.</p>
