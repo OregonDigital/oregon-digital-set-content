@@ -1,0 +1,58 @@
+
+<!-- Description -->
+<div class="left-image span4">
+    <div class="blueberry">
+        <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+        <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+        <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+            <li>
+                <figure>
+                    <%= link_to (image_tag "sets/#{params[:set]}/hop-plants.jpg", :alt => "Hop plants" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx71b4541" %>
+                    <figcaption><%= link_to "Hop plants", "/sets/#{params[:set]}/oregondigital:fx71b4541" %></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <%= link_to (image_tag "sets/#{params[:set]}/moving-hops.jpg", :alt => "Moving dried hops, ca. 1975" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx71b0482" %>
+                    <figcaption><%= link_to "Moving dried hops, ca. 1975", "/sets/#{params[:set]}/oregondigital:fx71b0482" %></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <%= link_to (image_tag "sets/#{params[:set]}/harvesting-hops.jpg", :alt => "Harvesting hop bines" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx719x95v" %>
+                    <figcaption><%= link_to "Harvesting hop bines", "/sets/#{params[:set]}/oregondigital:fx719x95v" %></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <%= link_to (image_tag "sets/#{params[:set]}/pacific-hop-grower.jpg", :alt => "The Pacific Hop Grower, May 1936-May 1937" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx719x48g" %>
+                    <figcaption><%= link_to "The Pacific Hop Grower, May 1936 - May 1937", "/sets/#{params[:set]}/oregondigital:fx719x48g" %></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <%= link_to (image_tag "sets/#{params[:set]}/the-hopper.jpg", :alt => "The Hopper, January-March 1954" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx719x33v" %>
+                    <figcaption><%= link_to "The Hopper, January-March 1954", "/sets/#{params[:set]}/oregondigital:fx719x33v" %></figcaption>
+                </figure>
+            </li>
+        </ul>
+        
+        <!-- Optional -->
+        <ul class="pager">
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+        </ul>
+        <!-- /Optional -->
+    </div>
+</div>
+<p>The <a href="http://scarc.library.oregonstate.edu/ohba.html">Oregon Hops &amp; Brewing Archives</a> (OHBA) digital collection is an online repository for digitized items from the Oregon State University Libraries <a href="http://scarc.library.oregonstate.edu">Special Collections &amp; Archives Research Center</a> (SCARC) collections, as well as digital surrogates of items held at other repositories or in personal collections. Included are images, publications, and textual documents related to the history of hops and brewing in Oregon.</p>
+
+<p>Items in this digital collection range in date from the late 1800s to more recent publications from the 1980s. Of particular note from OSU's collections are <em>The Hopper</em>, <em>The Oregon Hop Grower</em>, <em>The Pacific Hop Grower</em>, meeting minutes and photos from the Oregon Hop Growers Association, and photographs from various university department and manuscript collections. Digital surrogates of items held at other repositories or in personal collections include issues of Fred Eckhardt's <em>Amateur Brewer</em> held at the Multnomah County Library, photos from Art Larrance’s personal collection of hops and brewing memorabilia, and photos of hops harvest from the Mt Angel Abbey Library. </p>
+
+<p>Additional materials to support research into the history of hops and brewing are found in physical and electronic collections housed at SCARC, digitized research reports in <a href="http://ir.library.oregonstate.edu/xmlui">ScholarsArchive</a>, and on OSU's <a href="https://media.oregonstate.edu">MediaSpace</a> video and audio streaming site. </p>
+
+
