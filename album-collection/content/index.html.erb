@@ -8,13 +8,27 @@
         <ul class="slides crop">
           <li>
             <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/PH203_29-5.jpg", :alt => "Panoramic view of Portland, Oregon, displaying the Pioneer Courthouse" + ', ' + @set.title), '#' %>
-              <figcaption><%= link_to "Panoramic view of Portland, Oregon, displaying the Pioneer Courthouse", '#' %></figcaption>
+              <%= link_to (image_tag "sets/#{params[:set]}/album1.jpg", :alt => "Panoramic view of Portland, Oregon, displaying the Pioneer Courthouse" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66xf003" %>
+              <figcaption><%= link_to "Panoramic View of Portland, Oregon, Displaying the Pioneer Courthouse", "/sets/#{params[:set]}/oregondigital:df66xf003" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/album2.jpg", :alt => "Panoramic view of Portland, Oregon" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66xd84x" %>
+              <figcaption><%= link_to "Panoramic View of Portland, Oregon", "/sets/#{params[:set]}/oregondigital:df66xd84x" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/album3.jpg", :alt => "Mrs. Florence Hartshorm on Horseback" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66xd899" %>
+              <figcaption><%= link_to "Mrs. Florence Hartshorm on Horseback", "/sets/#{params[:set]}/oregondigital:df66xd899" %></figcaption>
             </figure>
           </li>
         </ul>
       <!-- Optional -->
         <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
         </ul>
       <!-- /Optional -->

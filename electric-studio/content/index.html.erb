@@ -8,13 +8,20 @@
         <ul class="slides crop">
           <li>
             <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/PH033_0001.jpg", :alt => "A man identified as Martin Schmitt is lying in the grass in front of an appaloosa horse" + ', ' + @set.title), '#' %>
-              <figcaption><%= link_to "Martin Schmitt lying in the grass in front of horse", '#' %></figcaption>
+              <%= link_to (image_tag "sets/#{params[:set]}/electric1.jpg", :alt => "A man identified as Martin Schmitt is lying in the grass in front of an appaloosa horse" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:q237hs217" %>
+              <figcaption><%= link_to "Martin Schmitt Lying in the Grass in Front of Horse", "/sets/#{params[:set]}/oregondigital:q237hs217" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/electric2.jpg", :alt => "A man identified as John Thomas wrestles a steer" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:n870zr55w" %>
+              <figcaption><%= link_to "Man Wrestling a Steer", "/sets/#{params[:set]}/oregondigital:n870zr55w" %></figcaption>
             </figure>
           </li>
         </ul>
       <!-- Optional -->
         <ul class="pager">
+          <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
         </ul>
       <!-- /Optional -->
