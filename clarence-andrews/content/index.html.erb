@@ -8,13 +8,27 @@
         <ul class="slides crop">
           <li>
             <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/PH001_0502.jpg", :alt => "Two men holding an ice ax and peering into a glacial crevasse" + ', ' + @set.title), '#' %>
-              <figcaption><%= link_to "Two men holding an ice ax and peering into a glacial crevasse", '#' %></figcaption>
+              <%= link_to (image_tag "sets/#{params[:set]}/andrews1.jpg", :alt => "Two men holding an ice ax and peering into a glacial crevasse" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx719n468" %>
+              <figcaption><%= link_to "Two Men at Glacial Crevasse", "/sets/#{params[:set]}/oregondigital:fx719n468" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/andrews2.jpg", :alt => "Two Men on Eagle Bluff" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx719n59b" %>
+              <figcaption><%= link_to "Two Men on Eagle Bluff", "/sets/#{params[:set]}/oregondigital:fx719n59b" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/andrews3.jpg", :alt => "Church Building" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx719n379" %>
+              <figcaption><%= link_to "Church Building", "/sets/#{params[:set]}/oregondigital:fx719n379" %></figcaption>
             </figure>
           </li>
         </ul>
       <!-- Optional -->
         <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
         </ul>
       <!-- /Optional -->
