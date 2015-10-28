@@ -8,13 +8,27 @@
         <ul class="slides crop">
           <li>
             <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/PH297_CM_24.jpg", :alt => "A piece of paper bearing an image of a classical sculpture" + ', ' + @set.title), '#' %>
-              <figcaption><%= link_to "A piece of paper bearing an image of a classical sculpture", '#' %></figcaption>
+              <%= link_to (image_tag "sets/#{params[:set]}/powell1.jpg", :alt => "A piece of paper bearing an image of a classical sculpture" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df70bm81p" %>
+              <figcaption><%= link_to "Dan Powell Photography", "/sets/#{params[:set]}/oregondigital:df70bm81p" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/powell2.jpg", :alt => "Dan Powell Still Life" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66z994q" %>
+              <figcaption><%= link_to "Still Life", "/sets/#{params[:set]}/oregondigital:df66z994q" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/powell3.jpg", :alt => "Dan Powell Photography" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66z982x" %>
+              <figcaption><%= link_to "Dan Powell Photography", "/sets/#{params[:set]}/oregondigital:df66z982x" %></figcaption>
             </figure>
           </li>
         </ul>
       <!-- Optional -->
         <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
         </ul>
       <!-- /Optional -->
