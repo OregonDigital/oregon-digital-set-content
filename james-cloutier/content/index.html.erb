@@ -8,13 +8,27 @@
         <ul class="slides crop">
           <li>
             <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/PH263_04-06.jpg", :alt => "Two women visit inside the Alpine Tavern" + ', ' + @set.title), '#' %>
-              <figcaption><%= link_to "Two women visit inside the Alpine Tavern", '#' %></figcaption>
+              <%= link_to (image_tag "sets/#{params[:set]}/cloutier1.jpg", :alt => "A outdoor candid portrait of a couple hugging in front of the Alpine Tavern in Alpine, Oregon." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66zh779" %>
+              <figcaption><%= link_to "Couple Hugging", "/sets/#{params[:set]}/oregondigital:df66zh779" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/cloutier2.jpg", :alt => "Two women visit inside the Alpine Tavern" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66zh90v" %>
+              <figcaption><%= link_to "Two Women at the Alpine Tavern", "/sets/#{params[:set]}/oregondigital:df66zh90v" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/cloutier3.jpg", :alt => "A man identified as Fuzz Tabor looks into the camera as he leans in for a pool shot at the Alpine Tavern, located in Alpine, Oregon." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66zh672" %>
+              <figcaption><%= link_to "Fuzz Tabor", "/sets/#{params[:set]}/oregondigital:df66zh672" %></figcaption>
             </figure>
           </li>
         </ul>
       <!-- Optional -->
         <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
         </ul>
       <!-- /Optional -->

@@ -1,6 +1,39 @@
 
     <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/mrb1.jpg", :alt => "Abigail Scott Duniway Diary" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df67wn939" %>
+              <figcaption><%= link_to "Abigail Scott Duniway Diary", "/sets/#{params[:set]}/oregondigital:df67wn939" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/mrb2.jpg", :alt => "Cayuse/Nez Perce Sketchbook" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df67wq31q" %>
+              <figcaption><%= link_to "Cayuse/Nez Perce Sketchbook", "/sets/#{params[:set]}/oregondigital:df67wq31q" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/mrb3.jpg", :alt => "Cheltenham Manuscript" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df67wm933" %>
+              <figcaption><%= link_to "Cheltenham Manuscript", "/sets/#{params[:set]}/oregondigital:df67wm933" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+      
+    </div>
 
-    <h3>Acknowledgements</h3>
-
-    <p>A small collection of manuscripts and rare books outside other collections.</p>
+    <p>A small collection of manuscripts and rare books exist outside other collections.</p>
