@@ -8,13 +8,27 @@
         <ul class="slides crop">
           <li>
             <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/PH036_4207.jpg", :alt => "Child and woman standing next to a pony" + ', ' + @set.title), '#' %>
-              <figcaption><%= link_to "Woman, Child and Pony", '#' %></figcaption>            
+              <%= link_to (image_tag "sets/#{params[:set]}/moorhouse1.jpg", :alt => "Child and woman standing next to a pony" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66x865w" %>
+              <figcaption><%= link_to "Woman, Child and Pony", "/sets/#{params[:set]}/oregondigital:df66x865w" %></figcaption>            
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/moorhouse2.jpg", :alt => "Image of an elderly Indian of North America sitting." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66x786f" %>
+              <figcaption><%= link_to "Elderly Woman", "/sets/#{params[:set]}/oregondigital:df66x786f" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/moorhouse3.jpg", :alt => "An outside photograph of a group of people&mdash;an adult male holding a baby, and five adult or teenage women, one woman holding a baby&mdash;standing in front of a log cabin." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df665j24h" %>
+              <figcaption><%= link_to "Log Cabin", "/sets/#{params[:set]}/oregondigital:df665j24h" %></figcaption>
             </figure>
           </li>
         </ul>
       <!-- Optional -->
         <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
         </ul>
       <!-- /Optional -->
