@@ -8,13 +8,27 @@
         <ul class="slides crop">
           <li>
             <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/PH338-040.jpg", :alt => "Man seated at a horseshoe shaped counter at Pope's Ice Cream and Donut Shop" + ', ' + @set.title), '#' %>
-              <figcaption><%= link_to "Man seated at a horseshoe shaped counter at Pope's Ice Cream and Donut Shop", '#' %></figcaption>
+              <%= link_to (image_tag "sets/#{params[:set]}/bauguess1.jpg", :alt => "Man seated at a horseshoe shaped counter at Pope's Ice Cream and Donut Shop" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66xb79n" %>
+              <figcaption><%= link_to "Pope's Ice Cream and Donut Shop", "/sets/#{params[:set]}/oregondigital:df66xb79n" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/bauguess2.jpg", :alt => "Man identified as Herb seated at a table at the Brass Rail tavern with a beer in his hand." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66xb67v" %>
+              <figcaption><%= link_to "Brass Rail Tavern", "/sets/#{params[:set]}/oregondigital:df66xb67v" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/bauguess3.jpg", :alt => "Black and white image of Loren's Barber Shop from the street." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66xb84h" %>
+              <figcaption><%= link_to "Loren's Barber Shop", "/sets/#{params[:set]}/oregondigital:df66xb84h" %></figcaption>
             </figure>
           </li>
         </ul>
       <!-- Optional -->
         <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
         </ul>
       <!-- /Optional -->

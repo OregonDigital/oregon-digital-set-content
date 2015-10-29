@@ -1,3 +1,32 @@
 
-  <!-- Description -->
-   <p>This set includes texts and data acquired by the University of Oregon library and are primarily restricted to UO community access. Please use the campus <a href="https://it.uoregon.edu/vpn">VPN</a> to access content.
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/texts1.jpg", :alt => "Consumer Middle East and North Africa 2013" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df661w67p#page/1/mode/1up" %>
+              <figcaption><%= link_to "Consumer Middle East and North Africa 2013", "/sets/#{params[:set]}/oregondigital:df661w67p#page/1/mode/1up" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/texts2.jpg", :alt => "Electric Literature No. 1 Enhanced" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df661w48g#page/1/mode/1up" %>
+              <figcaption><%= link_to "Electric Literature No. 1 Enhanced", "/sets/#{params[:set]}/oregondigital:df661w48g#page/1/mode/1up" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+      
+    </div>
+
+    <p>This set includes texts and data acquired by the University of Oregon library and are primarily restricted to UO community access. Please use the campus <a href="https://it.uoregon.edu/vpn">VPN</a> to access content.
