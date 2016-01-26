@@ -1,0 +1,55 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/columbia-gorge1-df70gv78h.jpg", :alt => 'Steamer "Dalles City" about 1905' + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df70gv78h" %>
+              <figcaption><%= link_to 'Steamer "Dalles City" about 1905', "/sets/#{params[:set]}/oregondigital:df70gv78h" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/columbia-gorge2-df70fs15n.jpg", :alt => "Dalles Commercial Club Team - 1904" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df70fs15n" %>
+              <figcaption><%= link_to "Dalles Commercial Club Team - 1904", "/sets/#{params[:set]}/oregondigital:df70fs15n" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/columbia-gorge3-df70hf009.jpg", :alt => '"Dalles City" and "Bailey Gatzert" - June, 9, 1913' + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df70hf009" %>
+              <figcaption><%= link_to '"Dalles City" and "Bailey Gatzert" - June, 9, 1913', "/sets/#{params[:set]}/oregondigital:df70hf009" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/columbia-gorge4-df70hg749.jpg", :alt => "Multnomah Falls" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df70hg749" %>
+              <figcaption><%= link_to "Multnomah Falls", "/sets/#{params[:set]}/oregondigital:df70hg749" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/columbia-gorge5-df70dr646.jpg", :alt => "Mt. Hood" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df70dr646" %>
+              <figcaption><%= link_to "Mt. Hood", "/sets/#{params[:set]}/oregondigital:df70dr646" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+	<p>The mission of the <a href="https://www.gorgediscovery.org/">Columbia Gorge Discovery Center &amp; Museum</a> is to inspire appreciation and stewardship through collection, preservation, and interpretation of cultural and natural history resources. This regional photo collection of over 9,000 images has been compiled by the Wasco County Pioneer Association and is presented through funding from Oregon Heritage Commission. Please contact the Discovery Center for image copies or reproduction rights.</p>
+
+	<p>Visit the <a href="https://www.gorgediscovery.org/">Columbia Gorge Discovery Center &amp; Museum website</a>.</p>
