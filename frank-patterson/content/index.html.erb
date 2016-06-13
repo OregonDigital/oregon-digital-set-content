@@ -1,0 +1,50 @@
+
+<!-- Description -->
+<div class="left-image span4">
+    <div class="blueberry">
+        <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+        <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+        <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+            <li>
+                <figure>
+                    <%= link_to (image_tag "sets/#{params[:set]}/patterson-coasthighway.jpg", :alt => "Oregon Coast Highway, ca. 1932" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66v732s" %>
+                    <figcaption><%= link_to "Oregon Coast Highway, ca. 1932", "/sets/#{params[:set]}/oregondigital:df66v732s" %></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <%= link_to (image_tag "sets/#{params[:set]}/patterson-klamathlake.jpg", :alt => "Klamath Lake, undated" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df70d829q" %>
+                    <figcaption><%= link_to "Klamath Lake, undated", "/sets/#{params[:set]}/oregondigital:df70d829q" %></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <%= link_to (image_tag "sets/#{params[:set]}/patterson-phantomship.jpg", :alt => "Passing Phantom Ship on Crater Lake, ca. 1932" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66v608h" %>
+                    <figcaption><%= link_to "Passing Phantom Ship on Crater Lake, ca. 1932", "/sets/#{params[:set]}/oregondigital:df66v608h" %></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <%= link_to (image_tag "sets/#{params[:set]}/patterson-sanddunes.jpg", :alt => "Sand Dunes at the Oregon Coast, ca. 1940" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df66v754t" %>
+                    <figcaption><%= link_to "Sand Dunes at the Oregon Coast, ca. 1940", "/sets/#{params[:set]}/oregondigital:df66v754t" %></figcaption>
+                </figure>
+            </li>
+        </ul>
+        
+        <!-- Optional -->
+        <ul class="pager">
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+        </ul>
+        <!-- /Optional -->
+    </div>
+</div>
+<p>The Frank Patterson Photographs depict natural features, tourist sites, and highways in Oregon and northern California.  Of note are numerous images of the Oregon Caves, Crater Lake, the Oregon Coast, and the redwoods.  The bulk of the images are photographic postcards which were produced <em>en masse</em> for purchase by travelers and tourists.  This digital collection also includes a checklist of Patterson images prepared by Robert I. Wright in 1996.</p>
+<p>Frank Patterson was a prolific photographer who worked from studios in Medford, Oregon, and Santa Rosa, California in the 1920s and 1930s.  More information about Patterson's photographic career and other photographs taken by Patterson are available in the <a href="http://scarc.library.oregonstate.edu/findingaids/index.php?p=collections/findingaid&id=2843">archival finding aid</a> for the Frank Patterson Photographic Postcards (P 312), as held in the Special Collections and Archives Research Center, Oregon State University Libraries.</p>
+
+
+
+
