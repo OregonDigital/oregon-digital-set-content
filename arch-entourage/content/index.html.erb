@@ -1,0 +1,39 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/arch-entourage1.jpg", :alt => "Twelve young people seated and standing." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx71c0932" %>
+              <figcaption><%= link_to "Young People Listening", "/sets/#{params[:set]}/oregondigital:fx71c0932" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/arch-entourage2.jpg", :alt => "Female playing basketball, arms raised, seated in wheelchair." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx71c092s" %>
+              <figcaption><%= link_to "Wheelchair Basketball", "/sets/#{params[:set]}/oregondigital:fx71c092s" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/arch-entourage3.jpg", :alt => "Standing female child in sari." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx71c091h" %>
+              <figcaption><%= link_to "Child in Sari", "/sets/#{params[:set]}/oregondigital:fx71c091h" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>The Architectural Entourage is a collection of digital-born images of people and objects for use in student work. Architecture students refer to these images as &ldquo;entourage&rdquo;, and use them to provide scale, depth, human interest and mood in finished architectural renderings and designs. The figures have been cut out and saved in PNG format to preserve transparent backgrounds. This collection is maintained by the UO Portland Library &amp; Learning Commons, and is available only to University of Oregon students, faculty and staff.<p>
+
