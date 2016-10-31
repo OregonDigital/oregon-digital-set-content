@@ -1,0 +1,100 @@
+
+  <!-- Description -->
+    <div class="left-image span4">
+
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/OrgLot369_FinleyA0198.jpg", :alt => "William L. Finley holding desert sparrows" + ', ' + @set.title), "#" %> 
+              <figcaption><%= link_to "William L. Finley holding desert sparrows", "#" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/OrgLot369_FinleyA0441.jpg", :alt => "Bohlman and Finley photographing an eagle’s nest" + ', ' + @set.title), "#" %> 
+              <figcaption><%= link_to "Bohlman and Finley photographing an eagle’s nest", "#" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/OrgLot369_FinleyA0578.jpg", :alt => "Barn owls" + ', ' + @set.title), "#" %> 
+              <figcaption><%= link_to "Barn owls", "#" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/OrgLot369_FinleyA0427.jpg", :alt => "Bohlman and Finley hiking with camera equipment" + ', ' + @set.title), "#" %> 
+              <figcaption><%= link_to "Bohlman and Finley hiking with camera equipment", "#" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/OrgLot369_FinleyA0156.jpg", :alt => "Road-runners" + ', ' + @set.title), "#" %> 
+              <figcaption><%= link_to "Road-runners", "#" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/OrgLot369_FinleyA0008.jpg", :alt => "Herbert Brown holding an elf owl" + ', ' + @set.title), "#" %> 
+              <figcaption><%= link_to "Herbert Brown holding an elf owl", "#" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/OrgLot369_FinleyA1718.jpg", :alt => "California gulls" + ', ' + @set.title), "#" %> 
+              <figcaption><%= link_to "California gulls", "#" %></figcaption>
+            </figure>
+          </li>
+
+        </ul>
+
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+<h3>Historical Context</h3>
+
+<p>William Lovell Finley trained as a biologist at the University of California-Berkeley and shared an early passion for birds with his childhood friend Herman T. Bohlman. Together, they developed an artistic knack for bird photography that provided an important body of scientific evidence. Backed by their keen observations and ability to communicate effectively with both policymakers and the public, they had a dramatic influence upon local and national conservation viewpoints and policies.</p>
+
+<p>Finley and Bohlman’s activism, along with that of other Oregon bird lovers, led to the passage of the Model Bird Act of 1903 and the formation of the Oregon Audubon Society (now the Audubon Society of Portland). Their images also played a key role in President Theodore Roosevelt’s decision to declare Three Arch Rocks, Klamath, and Malheur as special wildlife reservations. William Finley worked for the state of Oregon for eight years, serving as Oregon fish and game commissioner, state game warden, and state biologist. Finley’s wife, Irene, also took an active role after their marriage in 1906, working as his field partner. The two worked together on several nature films and published a large body of books and articles on ornithology, wildlife, and conservation.</p>
+
+
+<h3>Collection Notes</h3>
+
+<p>The materials in this collection are the result of a yearlong partnership between the Oregon Historical Society Research Library and the Oregon State University Libraries Special Collections and Archives Research Center to digitize the Finley and Bohlman photograph and manuscript collections held by our libraries. Now reunited online, the materials represent over fifty years (1899-1946) of work to document and protect the diversity of bird life in Oregon.</p>
+
+<p>Species names and descriptions are drawn from original metadata and may not reflect currently accepted naming conventions or terms. The Reuniting Finley and Bohlman Collection pulls materials from several preexisting OSU and OHS collections. These collections include:</p>
+
+<div class="text-center">
+<h4>OSU</h4>
+<a href="http://scarc.library.oregonstate.edu/findingaids/index.php?p=collections/findingaid&id=1851">MSS Finley – William L. Finley Papers, 1899-1946</a>
+<br/><a href="http://scarc.library.oregonstate.edu/findingaids/?p=collections/findingaid&id=2573">P 202 – Herman T. Bohlman Photograph Collection, ca. 1890-1925</a>
+<h4>OHS</h4>
+Coll 542 – Herman T. Bohlman lecture notes
+<br/><a href="http://archiveswest.orbiscascade.org/ark:/80444/xv04180">Mss 2654 – William L. Finley letters and scrapbook</a>
+<br/>Org. Lot 369 – William L. Finley photograph collection
+</div>
+
+
+<p><i>This project is supported in part by the Institute of Museum and Library Services through the Library Services and Technology Act, administered by the Oregon State Library.</i></p>
+
+<p><%= link_to (image_tag "sets/#{params[:set]}/imls.png", :alt => "Institute of Museum and Library Services"), "https://www.imls.gov/" %></p>
+
+<p><%= link_to (image_tag "sets/#{params[:set]}/ohs.png", :alt => "Oregon Historical Society"), "http://ohs.org/" %></p>
+
+<p><%= link_to (image_tag "sets/#{params[:set]}/osu.png", :alt => "Oregon State University"), "http://oregonstate.edu" %></p>
