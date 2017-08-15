@@ -1,0 +1,42 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/lawrence1.jpg", :alt => "Keating House" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df71vq62t" %>
+              <figcaption><%= link_to "Keating House", "/sets/#{params[:set]}/oregondigital:df71vq62t" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/lawrence2.jpg", :alt => "Keating House" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df71vq66x" %>
+              <figcaption><%= link_to "Keating House", "/sets/#{params[:set]}/oregondigital:df71vq66x" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/lawrence3.jpg", :alt => "Keating House" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df71vq68g" %>
+              <figcaption><%= link_to "Keating House", "/sets/#{params[:set]}/oregondigital:df71vq68g" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+    <div class="span4">
+      <p>Ellis Fuller Lawrence (November 13, 1879&ndash;February 27, 1946) was an American architect, working primarily in the state of Oregon as a member of the architectural firms Lawrence Holford and Allyn, and McNaughton, Raymond &amp; Lawrence. In 1914 he helped found and became the first dean of what would become the University of Oregon’s School of Architecture &amp; Environment. Lawrence also planned the UO campus and designed many campus buildings, including Knight Library and the Museum of Art. Lawrence Hall on the university campus is named in his honor.</p>
+
+      <p>The Ellis Fuller Lawrence papers, 1901&ndash;1929 includes correspondence, architectural drawings and photographs relating to projects undertaken by Lawrence as architect from 1908&ndash;1958, mainly in Oregon and Washington. Residential and public architecture projects include parks, churches, temples and several UO buildings. Records and correspondence by Lawrence as Dean of the School of Architecture are not included in this collection.</p>
+
+    </div>
