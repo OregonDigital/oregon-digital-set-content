@@ -1,0 +1,38 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/ellmaker1.jpg", :alt => "Four monochromatic images of women in a scrapbook" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Portraits", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/ellmaker2.jpg", :alt => "Five monochromatic portraits of women in a scrapbook" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Portraits of Women", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/ellmaker3.jpg", :alt => "Three monochromatic images of horsedrawn carts in a scrapbook" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Tanker Carts", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>The Ellmakers are a prominent pioneer family who first settled in Lane County, Oregon in the 1850s following their journey across the United States on the Oregon Trail. The Ellmaker family papers, 1768&ndash;2005 collection (A 032) contains material that documents the life of Oregon Trail pioneer Enos Ellmaker and the lives of his decedents in Lane County, Oregon, including his son Amos, Ulysses Ellmaker and his wife Ruth La Van Ellmaker, as well as Elaine Ellmaker Clark and her husband Gordon. This collection contains some 18th century documents related to the Ellmaker&rsquo;s of Lancaster County, Pennsylvania; personal papers of members of the Ellmaker family; maps, drawings, and photographs; artifacts; books and periodicals; and genealogical research and resources.</p>
