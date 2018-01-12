@@ -6,11 +6,30 @@
       <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
       <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
         <ul class="slides crop">
-          <!-- Waiting -->
-        </ul>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/colver1.jpg", :alt => "Handwritten letter to Colver home" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Handwritten Greetings", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/colver2.jpg", :alt => "Typewritten biography of Samuel Colver written by his grandson" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Short Biography", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/colver3.jpg", :alt => "Photograph from book of residence street in Jacksonville, Oregon" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Jacksonville Street", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+         </ul>
       <!-- Optional -->
         <ul class="pager">
-          <!-- Waiting -->
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
         </ul>
       <!-- /Optional -->
       </div>
