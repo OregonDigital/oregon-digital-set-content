@@ -1,0 +1,38 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/willis1.jpg", :alt => "Draft in pencil with measurements" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Draft", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/willis2.jpg", :alt => "Diary entry dated September 13" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "September 13th", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/willis3.jpg", :alt => "1959 supply ledger in ink" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Supply Ledger", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>Willis Dunagan was a farmer in Marion County, Oregon. The collection includes 15 bound diaries (1865&ndash;1872, 1875, 1879&ndash;1884, 1886&ndash;1891, 1894&ndash;1897) that include daily activities, financial records, and occasional inspirational musings. The collection also includes a memorandum of a cattle drive from Camp Floyd, Utah, to Meadow Creek, California, August 16-October 4, 1869 [?], by an unknown diarist. The papers include legal documents relating to the estate of Israel Chamness of Marion County, 1859&ndash;1861. The collection also contains two (rolled) diplomas earned by Dunagan, one high school, and one from the Oregon Normal school.</p>
