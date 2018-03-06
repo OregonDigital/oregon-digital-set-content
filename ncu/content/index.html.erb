@@ -1,0 +1,38 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/ncu1.png", :alt => "Northwestern Christian University logo" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Northwestern Christian University", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/ncu2.jpg", :alt => "Page from Bushnell autobiography with handwritten marginalia" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Bushnell Biography", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/ncu3.jpg", :alt => "Monochromatic photograph of J.A. Bushnell" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "J.A. Bushnell", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>Founded as Eugene Divinity School in 1895, Northwest Christian University (NCU) is a private, Christian liberal arts college in Eugene, Oregon. Its name was changed in 1908 to the Eugene Bible University and again in 1930 to the Eugene Bible College. Merging with Spokane University in 1934 it became known as the Northwest Christian College. It was renamed Northwest Christian University in 2008. This small collection of items is from the Kellenberger Library Archives. For more information about the Library's holdings, please contact Steve Silver, Library Director, Northwest Christian University, <a href="mailto:ssilver@nwcu.edu">ssilver@nwcu.edu</a>.</p>
