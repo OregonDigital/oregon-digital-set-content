@@ -1,0 +1,40 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/uodesign1.jpg", :alt => "Plan de Paris" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Plan de Paris", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/uodesign2.jpg", :alt => "Plan de Paris" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Plan de Paris", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/uodesign3.jpg", :alt => "La Ville drawing" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "La Ville", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>The Design Library is a major center for art and architectural information in the Pacific Northwest. Many books, drawings, and works of art were gifted in the early years of the College of Design by the professors, architects, artists, and visiting lecturers who were interested in building a major resource for research and instruction. Throughout the years, librarians have diligently collected and preserved various artifacts connected with the school's history. In 1991, a major bequest from Marion Dean Ross, former chair of the Department of the History of Art and Architecture, established an endowment which has been dedicated to acquiring rare architectural books. In 2014, added space for the Design Library enabled opportunities to collection more of these valuable resources and increase access and use them for instruction and research.</p>
+
+    <p>The physical collection holds 2,000 rare books, 850 artist's books, architectural drawings, archival 35mm slides, and works of art. For more information, please see the  <a href="https://researchguides.uoregon.edu/aaa-special/">Special Collections in the Design Library research guide</a>, or contact librarians <a href="mailto:ehteague@uoregon.edu">Ed Teague</a> or <a href="mailto:sdewaay@uoregon.edu">Sara DeWaay</a>.</p>

@@ -1,0 +1,66 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/easia1.jpg", :alt => "Color topographical map of Formosa" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Formosa", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/easia2.jpg", :alt => "Color feudal map of Japan" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Feudal Map", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/easia3.jpg", :alt => "Monochromatic drawing of Buddhist temple of Ikegami" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Temple Drawing", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/easia4.jpg", :alt => "Monochromatic photograph of Korean officer of the Old Army" + ', ' + @set.title), "/sets/#{params[:set]}/" %>
+              <figcaption><%= link_to "Korean Officer", "/sets/#{params[:set]}/" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>The e-Asia project (2000&ndash;2011) was funded by the University of Oregon Libraries through the generosity of Nissho Iwai under the leadership of Robert Felsing, East Asian Bibliographer. By building a collection of digitized e-books and a database of full text web resources, e-Asia strove to contribute to the research and scholarship of East Asia. While the e-Asia project was based largely on resources held at the University of Oregon Libraries, its purpose was neither to duplicate nor displace printed traditional materials. Rather, by providing searchable full text, the digitalization efforts of e-Asia represented a new tool aimed at facilitating the information-gathering process. The content of the e-Asia Digital Library was migrated to Oregon Digital in 2018. For more resources and information about the project, please consult the e-Asia Research Guide (coming soon). <!-->[Link: https://researchguides.uoregon.edu/e-Asia-Digital-Library/Home (not live yet)]-->
+
+    <p>Various individuals and organizations have generously allowed e-Asia to incorporate materials that they have authored, digitized, or have in their holdings. We would like to thank:</p>
+
+    <ul>
+      <li><a href="http://www.amitabhalibrary.org/">Amitabha Buddhist Library in Chicago</a></li>
+      <li>Anthropology Department, University of Oregon</li>
+      <li>Asian Perspectives</li>
+      <li>Dr. William Crowell</li>
+      <li>Bak Sang-u</li>
+      <li>Professor Mary Erbaugh</li>
+      <li>Google Books</li>
+      <li>Professor Stephen Kohl</li>
+      <li>Neotext.com</li>
+      <li>Special Collections, University of Oregon Libraries</li>
+      <li>Richard & Mary Corrigan Solari</li>
+      <li>Professor Nathan Sturman</li>
+      <li>University of Oregon Press</li>
+      <li>Eileen Vickery</li>
+      <li>www.eshunet.com</li>
+      <li><a href="http://marx2mao.com/">www.marx2mao.org</a></li>
+    </ul>
