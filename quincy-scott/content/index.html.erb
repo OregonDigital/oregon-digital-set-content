@@ -1,0 +1,45 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/quincy-scott1.jpg", :alt => "Charcoal and pastel drawing of Columbia River with a horse metaphor" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df72sm38x" %>
+              <figcaption><%= link_to "Columbia's Horsepower", "/sets/#{params[:set]}/oregondigital:df72sm38x" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/quincy-scott2.jpg", :alt => "Charcoal and pastel drawing of traffic signage in man's arms" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df72sr28h" %>
+              <figcaption><%= link_to "Traffic Changes", "/sets/#{params[:set]}/oregondigital:df72sr28h" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/quincy-scott3.jpg", :alt => "Charcoal and pastel drawing of woman on a throne honoring Oregon as a kneeling man" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df72sm043" %>
+              <figcaption><%= link_to "Reign of Youth and Roses", "/sets/#{params[:set]}/oregondigital:df72sm043" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/quincy-scott4.jpg", :alt => "Pen drawing of Franklin Deleno Roosevelt admiring himself in mirrors" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df72sn57b" %>
+              <figcaption><%= link_to "Pres. Franklin D. Roosevelt", "/sets/#{params[:set]}/oregondigital:df72sn57b" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>Quincy Scott (1882&ndash;1965) was an artist and editorial cartoonist for The Oregonian in Portland from 1931&ndash;1949. Scott trained in New York City and published his early works in New York magazines and newspapers, but he permanently moved to the West in 1912. The bulk of Quincy Scott collection includes original artwork produced during his tenure at The Oregonian, comprised of over 5,000 almost daily political cartoons. Scott was a dedicated member of the Republican Party and his cartoons reflect his attitudes on local, national, and international political events. The cartoons depict early twentieth century daily life, recreation, and industry in Portland and the Northwest and includes a large extent of material that illustrate conservative receptions of Depression-era legislation, such as the New Deal.</p>
