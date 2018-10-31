@@ -1,0 +1,47 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/marketing1.jpg", :alt => "Bicycle rack outside student athlete housing" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df72zt20k" %>
+              <figcaption><%= link_to "Athlete Housing", "/sets/#{params[:set]}/oregondigital:df72zt20k" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/marketing2.jpg", :alt => "Lillis Business Complex exterior" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df72zz69v" %>
+              <figcaption><%= link_to "Lillis Business Complex", "/sets/#{params[:set]}/oregondigital:df72zz69v" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/marketing3.jpg", :alt => "Students relaxing outside the Presidents offices in Johnson Hall" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df730f692" %>
+              <figcaption><%= link_to "Johnson Hall", "/sets/#{params[:set]}/oregondigital:df730f692" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/marketing4.jpg", :alt => "Chapman Hall doorway" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df731809r" %>
+              <figcaption><%= link_to "Chapman Hall", "/sets/#{params[:set]}/oregondigital:df731809r" %></figcaption>
+            </figure>
+          </li>
+        </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+    <p>This UO Marketing Communications library contains images from 2014 and earlier. Access to view this library is open to anyone on campus. Use of these materials requires copyright clearance for non-academic purposes.</p>
+
+    <p>For more information see the <a href="https://researchguides.uoregon.edu/images/fair-use">Copyright and Fair Use Resources</a> section of the <a href="https://researchguides.uoregon.edu/images/">Finding Images Research Guide</a>, and the <a href="https://library.uoregon.edu/diglib/irg/copyright_grad_students">Copyright Basics for Graduate Students</a> page.</p>
