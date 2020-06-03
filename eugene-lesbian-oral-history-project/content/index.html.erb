@@ -6,7 +6,13 @@
       <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
       <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
         <ul class="slides crop">
-                  <li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital_df73c2649.jpg", :alt => "Oral History Interview with Lynne Lucas" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df73c380w" %>
+              <figcaption><%= link_to "Oral History Interview with Lynne Lucas", "/sets/#{params[:set]}/oregondigital:df73c380w" %></figcaption>
+            </figure>
+          </li>
+          <li>
             <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/oregondigital_df73c0990.jpg", :alt => "Oral History Interview with Evelyn Anderton" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df73c169g" %>
               <figcaption><%= link_to "Oral History Interview with Evelyn Anderton", "/sets/#{params[:set]}/oregondigital:df73c169g" %></figcaption>
@@ -20,12 +26,6 @@
           </li>
           <li>
             <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital_df73b2649.jpg", :alt => "Oral History Interview with Lynne Lucas" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df73c380w" %>
-              <figcaption><%= link_to "Oral History Interview with Lynne Lucas", "/sets/#{params[:set]}/oregondigital:df73c380w" %></figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/oregondigital_df73c3149.jpg", :alt => "Oral History Interview with Gail Pyburn" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df73c3972" %>
               <figcaption><%= link_to "Oral History Interview with Gail Pyburn", "/sets/#{params[:set]}/oregondigital:df73c3972" %></figcaption>
             </figure>
@@ -33,8 +33,6 @@
          </ul>
       <!-- Optional -->
         <ul class="pager">
-          <li><a href="#"><span></span></a></li>
-          <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
           <li><a href="#"><span></span></a></li>
