@@ -1,0 +1,38 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital_df73dt01r.jpg", :alt => "Portrait of WWII US Army Officers Jack Tysell and John Tysell Sr." + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df73dt01r" %>
+              <figcaption><%= link_to "Portrait of WWII US Army Officers Jack Tysell and John Tysell, Sr.", "/sets/#{params[:set]}/oregondigital:df73dt01r" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital_df73dr47z.jpg", :alt => "John Tysell Sr. Personal Correspondence 1944" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df73dr47z" %>
+              <figcaption><%= link_to "John Tysell Sr. Personal Correspondence 1944", "/sets/#{params[:set]}/oregondigital:df73dr47z" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital_df73ds60q.jpg", :alt => "John Tysell Sr. Personal Correspondence 1943" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:df73ds60q" %>
+              <figcaption><%= link_to "John Tysell Sr. Personal Correspondence 1943", "/sets/#{params[:set]}/oregondigital:df73ds60q" %></figcaption>
+            </figure>
+          </li>
+         </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+<p>John Edward Tysell Sr. trained as a doctor in Chicago before serving in the Pacific Theatre during World War II. The collection consists of correspondence, photographs and slides, ephemera and artifacts relating to Tysell's service in WWII.</p>
