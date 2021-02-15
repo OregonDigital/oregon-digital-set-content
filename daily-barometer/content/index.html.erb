@@ -1,5 +1,39 @@
-<p><%= link_to (image_tag "sets/#{params[:set]}/barometer-1906.jpg", :alt => "The OAC College Barometer, November 10, 1906"), "/sets/#{params[:set]}?q=&search_field=all_fields" %></p>
-
+<!-- Description -->
+<div class="left-image span4">
+    <div class="blueberry">
+        <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+        <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+        <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+            <li>
+                <figure>
+                    <%= link_to (image_tag "sets/#{params[:set]}/barometer-1905.jpg", :alt => "OAC College Barometer, May 1905" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx71cv55t" %>
+                    <figcaption><%= link_to "OAC College Barometer, May 1905", "/sets/#{params[:set]}/oregondigital:fx71cv55t" %></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <%= link_to (image_tag "sets/#{params[:set]}/barometer-1906.jpg", :alt => "OAC College Barometer, November 10, 1906" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:9z902z94k" %>
+                    <figcaption><%= link_to "OAC College Barometer, November 10, 1906", "/sets/#{params[:set]}/oregondigital:9z902z94k" %></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <%= link_to (image_tag "sets/#{params[:set]}/barometer-1910.jpg", :alt => "OAC College Barometer Extra Edition, November 22, 1910" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:9z903410r" %>
+                    <figcaption><%= link_to "OAC College Barometer Extra Edition, November 22, 1910", "/sets/#{params[:set]}/oregondigital:9z903410r" %></figcaption>
+                </figure>
+            </li>
+        </ul>
+        
+        <!-- Optional -->
+        <ul class="pager">
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+        </ul>
+        <!-- /Optional -->
+    </div>
+</div>
 <p><em>The Daily Barometer</em> is Oregon State University's student-published campus newspaper. The content is written and edited by Oregon State students and includes news articles, editorials, and advertisements. This publication documents the full range of campus programs and activities including academic and research initiatives, student activities, athletics, campus buildings and facilities, as well as local and regional news and events.</p>
 
 <p>The first issue was published on March 16, 1896 as <em>The College Barometer</em>; publication continued monthly until 1907 in a magazine format. In the fall of 1907, <em>The College Barometer</em> became a weekly publication in a newspaper format; semi-weekly publication began in December 1909. A daily newspaper was launched in 1923 and the title changed to <em>The Daily Barometer</em> to reflect this expanded publication. In 2016, the campus newspaper reduced print publication to a weekly, <em>The Baro</em>, and delivered daily news online through the Orange Media Network website.</p>
