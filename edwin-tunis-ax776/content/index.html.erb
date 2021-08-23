@@ -8,6 +8,12 @@
         <ul class="slides crop">
           <li>
             <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital-1j92gg03g.jpg", :alt => "Colonial Living, circa 1955-1958" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:1j92gg03g" %>
+              <figcaption><%= link_to "Colonial Living, circa 1955-1958", "/sets/#{params[:set]}/oregondigital:1j92gg03g" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/oregondigital-1j92gg00n.jpg", :alt => "Colonial Living, circa 1955-1958" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:1j92gg00n" %>
               <figcaption><%= link_to "Colonial Living, circa 1955-1958", "/sets/#{params[:set]}/oregondigital:1j92gg00n" %></figcaption>
             </figure>
@@ -20,17 +26,10 @@
           </li>
           <li>
             <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital-1j92gg03g.jpg", :alt => "Colonial Living, circa 1955-1958" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:1j92gg03g" %>
-              <figcaption><%= link_to "Colonial Living, circa 1955-1958", "/sets/#{params[:set]}/oregondigital:1j92gg03g" %></figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/oregondigital-1j92gg26s.jpg", :alt => "Colonial Living, circa 1955-1958" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:1j92gg26s" %>
               <figcaption><%= link_to "Colonial Living, circa 1955-1958", "/sets/#{params[:set]}/oregondigital:1j92gg26s" %></figcaption>
             </figure>
           </li>
-
          </ul>
       <!-- Optional -->
         <ul class="pager">
