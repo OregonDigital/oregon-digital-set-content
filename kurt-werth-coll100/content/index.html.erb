@@ -8,6 +8,12 @@
         <ul class="slides crop">
           <li>
             <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital-1j92gp058.jpg", :alt => "The Little Naturalist, circa 1959" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:1j92gp058" %>
+              <figcaption><%= link_to "The Little Naturalist, circa 1959", "/sets/#{params[:set]}/oregondigital:1j92gp058" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/oregondigital-1j92gn26t.jpg", :alt => "Meet Miki Takino, circa 1963" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:1j92gn26t" %>
               <figcaption><%= link_to "Meet Miki Takino, circa 1963", "/sets/#{params[:set]}/oregondigital:1j92gn26t" %></figcaption>
             </figure>
@@ -28,12 +34,6 @@
             <figure>
               <%= link_to (image_tag "sets/#{params[:set]}/oregondigital-1j92gk95t.jpg", :alt => "The Little Naturalist, circa 1959" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:1j92gk95t" %>
               <figcaption><%= link_to "The Little Naturalist, circa 1959", "/sets/#{params[:set]}/oregondigital:1j92gk95t" %></figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital-1j92gp058.jpg", :alt => "The Little Naturalist, circa 1959" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:1j92gp058" %>
-              <figcaption><%= link_to "The Little Naturalist, circa 1959", "/sets/#{params[:set]}/oregondigital:1j92gp058" %></figcaption>
             </figure>
           </li>
          </ul>
