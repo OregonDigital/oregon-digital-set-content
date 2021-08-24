@@ -1,0 +1,46 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital-1j92gg03g.jpg", :alt => "Colonial Living, circa 1955-1958" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:1j92gg03g" %>
+              <figcaption><%= link_to "Colonial Living, circa 1955-1958", "/sets/#{params[:set]}/oregondigital:1j92gg03g" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital-1j92gg00n.jpg", :alt => "Colonial Living, circa 1955-1958" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:1j92gg00n" %>
+              <figcaption><%= link_to "Colonial Living, circa 1955-1958", "/sets/#{params[:set]}/oregondigital:1j92gg00n" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital-1j92gf861.jpg", :alt => "Frontier Living, circa 1961-1965" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:1j92gf861" %>
+              <figcaption><%= link_to "Frontier Living, circa 1961-1965", "/sets/#{params[:set]}/oregondigital:1j92gf861" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital-1j92gg26s.jpg", :alt => "Colonial Living, circa 1955-1958" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:1j92gg26s" %>
+              <figcaption><%= link_to "Colonial Living, circa 1955-1958", "/sets/#{params[:set]}/oregondigital:1j92gg26s" %></figcaption>
+            </figure>
+          </li>
+         </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+<p>The Edwin Tunis papers include manuscripts and illustrations for children's books, as well as correspondence, articles, reviews, publicity, and personal papers.</p>
+
