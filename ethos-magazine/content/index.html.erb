@@ -1,0 +1,40 @@
+
+    <!-- Description -->
+    <div class="left-image span4">
+      <div class="blueberry">
+      <!-- Using jquery.blueberry.js and CSS within theme.css.scss -->
+      <!-- Limit this to nine slides or less - 'cause 3 is the magic number! -->
+      <!-- Put the tallest image first (if they vary in size) - it sets the size for the whole show and location of navigation -->
+        <ul class="slides crop">
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital_fx71d771n.jpg", :alt => "Ethos Magazine cover" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx71d771n" %>
+              <figcaption><%= link_to "Ethos Magazine, Spring 2021", "/sets/#{params[:set]}/oregondigital:fx71d771n" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital_fx71d772x.jpg", :alt => "Ethos Magazine cover" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx71d772x" %>
+              <figcaption><%= link_to "Ethos Magazine, Winter 2022", "/sets/#{params[:set]}/oregondigital:fx71d772x" %></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <%= link_to (image_tag "sets/#{params[:set]}/oregondigital_fx71d7736.jpg", :alt => "Ethos Magazine cover" + ', ' + @set.title), "/sets/#{params[:set]}/oregondigital:fx71d7736" %>
+              <figcaption><%= link_to "Ethos Magazine, Spring 2022", "/sets/#{params[:set]}/oregondigital:fx71d7736" %></figcaption>
+            </figure>
+          </li>
+         </ul>
+      <!-- Optional -->
+        <ul class="pager">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+        </ul>
+      <!-- /Optional -->
+      </div>
+    </div>
+
+<p>Ethos is a nationally recognized, award-winning independent student publication. Its mission is to elevate the voices of marginalized people who are underrepresented in the media landscape and to write in-depth, human-focused stories about the issues affecting them.</p>
+<p>Ethos is part of Emerald Media Group, a non-profit organization that’s fully independent of the University of Oregon. Students maintain complete editorial control over Ethos and work tirelessly to produce the magazine.</p>
+
